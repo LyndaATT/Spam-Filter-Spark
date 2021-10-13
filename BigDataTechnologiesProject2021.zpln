@@ -1,0 +1,869 @@
+﻿{
+  "paragraphs": [
+    {
+      "text": "%md\n\n## Spark Project\n#### Exploring the Ling-Spam email dataset\n\n**Language**: Scala\n\n**Authors**: Lynda",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-13T19:13:45+0200",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "editOnDblClick": true,
+          "language": "markdown",
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/markdown",
+        "colWidth": 12,
+        "editorHide": true,
+        "fontSize": 9,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<h2>Spark Project</h2>\n<h4>Exploring the Ling-Spam email dataset</h4>\n<p><strong>Language</strong>: Scala</p>\n<p><strong>Authors</strong>: Lynda</p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1633968682634_445564843",
+      "id": "20160410-003138_1880368561",
+      "dateCreated": "2021-10-11T18:11:22+0200",
+      "status": "FINISHED",
+      "focus": true,
+      "$$hashKey": "object:184",
+      "dateFinished": "2021-10-13T19:14:01+0200",
+      "dateStarted": "2021-10-13T19:13:45+0200"
+    },
+    {
+      "title": "How to run a paragraph",
+      "text": "%md\nTo run a paragraph in a Zeppelin notebook you can either click the `play` button (blue triangle) on the right-hand side or simply press `Shift + Enter`.",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-11T18:12:25+0200",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "editOnDblClick": true,
+          "language": "markdown",
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/markdown",
+        "colWidth": 12,
+        "editorHide": true,
+        "fontSize": 9,
+        "title": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>To run a paragraph in a Zeppelin notebook you can either click the <code>play</code> button (blue triangle) on the right-hand side or simply press <code>Shift + Enter</code>.</p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1633968682635_364427885",
+      "id": "20160410-003138_1218388802",
+      "dateCreated": "2021-10-11T18:11:22+0200",
+      "dateStarted": "2021-10-11T18:12:25+0200",
+      "dateFinished": "2021-10-11T18:12:25+0200",
+      "status": "FINISHED",
+      "$$hashKey": "object:185"
+    },
+    {
+      "title": "What are Interpreters?",
+      "text": "%md\n\nIn the following paragraphs we are going to execute Spark code, run shell commands to download and move files, run sql queries etc. Each paragraph will start with `%` followed by an interpreter name, e.g. `%spark` for a Spark interpreter. Different interpreter names indicate what will be executed: code, markdown, html etc.  This allows you to perform data ingestion, munging, wrangling, visualization, analysis, processing and more, all in one place!\n\nThroughtout this notebook we will use the following interpreters:\n\n- `%spark` - Spark interpreter to run Spark code written in Scala\n- `%md` - Markdown for displaying formatted text, links, and images\n\nTo learn more about Zeppelin interpreters check out this [link](https://zeppelin.apache.org/).",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-11T18:11:22+0200",
+      "config": {
+        "tableHide": false,
+        "editorSetting": {
+          "editOnDblClick": true,
+          "language": "markdown",
+          "completionSupport": false
+        },
+        "editorMode": "ace/mode/markdown",
+        "colWidth": 12,
+        "editorHide": true,
+        "fontSize": 9,
+        "title": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "HTML",
+            "data": "<div class=\"markdown-body\">\n<p>In the following paragraphs we are going to execute Spark code, run shell commands to download and move files, run sql queries etc. Each paragraph will start with <code>%</code> followed by an interpreter name, e.g. <code>%spark</code> for a Spark interpreter. Different interpreter names indicate what will be executed: code, markdown, html etc.  This allows you to perform data ingestion, munging, wrangling, visualization, analysis, processing and more, all in one place!</p>\n<p>Throughtout this notebook we will use the following interpreters:</p>\n<ul>\n<li><code>%spark</code> - Spark interpreter to run Spark code written in Scala</li>\n<li><code>%md</code> - Markdown for displaying formatted text, links, and images</li>\n</ul>\n<p>To learn more about Zeppelin interpreters check out this <a href=\"https://zeppelin.apache.org/\">link</a>.</p>\n\n</div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1633968682635_524137982",
+      "id": "20160410-003138_290903368",
+      "dateCreated": "2021-10-11T18:11:22+0200",
+      "status": "READY",
+      "$$hashKey": "object:186"
+    },
+    {
+      "title": "Verify Spark Version",
+      "text": "%spark\n\nspark.version",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-13T19:14:06+0200",
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false,
+          "language": "scala",
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala",
+        "colWidth": 12,
+        "editorHide": false,
+        "fontSize": 9,
+        "title": true,
+        "results": [
+          {
+            "graph": {
+              "mode": "table",
+              "height": 300,
+              "optionOpen": false,
+              "keys": [],
+              "values": [],
+              "groups": [],
+              "scatter": {}
+            }
+          }
+        ],
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres1\u001b[0m: \u001b[1m\u001b[32mString\u001b[0m = 3.0.0\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1633968682635_1800876874",
+      "id": "20160410-003138_631425785",
+      "dateCreated": "2021-10-11T18:11:22+0200",
+      "dateStarted": "2021-10-13T19:14:06+0200",
+      "dateFinished": "2021-10-13T19:15:47+0200",
+      "status": "FINISHED",
+      "$$hashKey": "object:187"
+    },
+    {
+      "title": "Import the libraries",
+      "text": "%spark\n\nimport org.apache.spark.SparkContext\nimport org.apache.spark.SparkContext._\nimport org.apache.spark.SparkConf\nimport org.apache.spark.rdd.RDD",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-13T19:14:14+0200",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "editorHide": false,
+        "fontSize": 9,
+        "title": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "import org.apache.spark.SparkContext\nimport org.apache.spark.SparkContext._\nimport org.apache.spark.SparkConf\nimport org.apache.spark.rdd.RDD\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1633968682635_282742659",
+      "id": "20180923-211737_1641560190",
+      "dateCreated": "2021-10-11T18:11:22+0200",
+      "dateStarted": "2021-10-13T19:14:26+0200",
+      "dateFinished": "2021-10-13T19:15:52+0200",
+      "status": "FINISHED",
+      "$$hashKey": "object:188"
+    },
+    {
+      "text": "sc.wholeTextFiles(\"/tmp/ling-spam/spam/spmsgc99.txt\").collect",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-13T11:24:37+0200",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres3\u001b[0m: \u001b[1m\u001b[32mArray[(String, String)]\u001b[0m =\nArray((hdfs://localhost:9000/tmp/ling-spam/spam/spmsgc99.txt,\"Subject: ' t stand ! ! ! ! ! ! !\n\ndear internet user : dear internet user : sound familiar ? = 92re relax front tv , enjoy f = avorite program sudden cut screaming voice = booming music commercial hair stand end ! y = ou scramble remote lower volume . program returns = barely hear talk , grab = remote re-adjust volume once again . annoying isn = 92t ? = 92re change channel station station . = program loud , hardly hear . = 92re consta = ntly adjust volume = 96 , down , , down , , down ! automatic television sound regulator &trade = ; - manufacture sony tm wouldn = 92t great volume alway stay exactly whe = re want ? news ! automatus = c television sound regulator &trade...\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=0",
+              "$$hashKey": "object:871"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634051474841_1604383711",
+      "id": "paragraph_1634051474841_1604383711",
+      "dateCreated": "2021-10-12T17:11:14+0200",
+      "dateStarted": "2021-10-13T11:24:38+0200",
+      "dateFinished": "2021-10-13T11:24:59+0200",
+      "status": "FINISHED",
+      "$$hashKey": "object:189"
+    },
+    {
+      "user": "anonymous",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634051542483_968347485",
+      "id": "paragraph_1634051542483_968347485",
+      "dateCreated": "2021-10-12T17:12:22+0200",
+      "status": "READY",
+      "$$hashKey": "object:190"
+    },
+    {
+      "title": "Function \"probaWordDir\"",
+      "text": "%spark\n\ndef probaWordDir(sc:SparkContext)(filesDir:String)\n  :(RDD[(String, Double)], Long) = {\n    // reading all the text files withing filesDir\n    // pair : (name of the input file, text)\n    val rdd = sc.wholeTextFiles(filesDir)\n    \n    // number of files\n    val nbFiles = rdd.count()\n    \n    // list of non-informative words\n    val nonInformativeWords = List(\".\", \":\", \",\", \" \", \"/\",\"\\\\\", \"-\", \"'\", \"(\", \")\", \"@\")\n                                 \n    \n    // RDD where the key is the file name and the value is the list of unique words contained in it\n    // steps à appliquer sur value : \n    // 1) remove extra spaces using : trim()\n    // 2) split (separated by \"\\\\s+\")\n    // 3) keep only informative words, to do that use filterNot\n    \n    val filesWords: RDD[(String, List[String])]= rdd.map(textFile=>(textFile._1,textFile._2.trim().split(\"\\\\s+\").distinct.toList.filterNot(nonInformativeWords.toSet)))\n    \n    // number of occurences of each word among all files\n    // for each file (in value list) of a word container(key) we assign 1, will gonna get a list of pair (file,1)\n    // then we use reduceByKey to sum over the files\n    val wordDirOccurency: RDD[(String,Int)] = filesWords.flatMap(w=>w._2.map(f=>(f,1))).reduceByKey(_+_)\n    \n    //probability \n    // proba = ratio = number of occurrences of the word / nbFiles\n    // !!! convert to double to not have problems with the rest of the division !!!\n    val probaWord: RDD[(String,Double)] = wordDirOccurency.map(wo=>(wo._1,wo._2.toDouble/nbFiles))\n    \n    (probaWord, nbFiles) // couple returned by the function\n    \n }\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-13T19:14:27+0200",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "editorHide": false,
+        "fontSize": 9,
+        "title": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mprobaWordDir\u001b[0m: \u001b[1m\u001b[32m(sc: org.apache.spark.SparkContext)(filesDir: String)(org.apache.spark.rdd.RDD[(String, Double)], Long)\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1633968682636_1409353746",
+      "id": "20180923-211835_549575843",
+      "dateCreated": "2021-10-11T18:11:22+0200",
+      "dateStarted": "2021-10-13T19:15:47+0200",
+      "dateFinished": "2021-10-13T19:15:58+0200",
+      "status": "FINISHED",
+      "$$hashKey": "object:191"
+    },
+    {
+      "text": "%spark\nval rdd = sc.wholeTextFiles(\"/tmp/ling-spam/spam/spmsgc99.txt\")\nval nonInformativeWords = List(\".\", \":\", \",\", \" \", \"/\",\"\\\\\", \"-\", \"'\", \"(\", \")\", \"@\")\nval rddsplit = rdd.map(textFile=>(textFile._1,textFile._2.trim().split(\"\\\\s+\").distinct) )\nval rddsplit2 = rdd.map(textFile=>(textFile._1,textFile._2.split(\"\\\\s+\").distinct) )\nrddsplit.collect\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-13T19:14:38+0200",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mrdd\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, String)]\u001b[0m = /tmp/ling-spam/spam/spmsgc99.txt MapPartitionsRDD[1] at wholeTextFiles at <console>:31\n\u001b[1m\u001b[34mnonInformativeWords\u001b[0m: \u001b[1m\u001b[32mList[String]\u001b[0m = List(., :, ,, \" \", /, \\, -, ', (, ), @)\n\u001b[1m\u001b[34mrddsplit\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Array[String])]\u001b[0m = MapPartitionsRDD[2] at map at <console>:33\n\u001b[1m\u001b[34mrddsplit2\u001b[0m: \u001b[1m\u001b[32morg.apache.spark.rdd.RDD[(String, Array[String])]\u001b[0m = MapPartitionsRDD[3] at map at <console>:34\n\u001b[1m\u001b[34mres2\u001b[0m: \u001b[1m\u001b[32mArray[(String, Array[String])]\u001b[0m = Array((hdfs://localhost:9000/tmp/ling-spam/spam/spmsgc99.txt,Array(Subject:, ', t, stand, !, dear, internet, user, :, sound, familiar, ?, =, 92re, relax, front, tv, ,, enjoy, f, avorite, program, sudden, ...\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=0",
+              "$$hashKey": "object:1784"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634053589718_1053210457",
+      "id": "paragraph_1634053589718_1053210457",
+      "dateCreated": "2021-10-12T17:46:29+0200",
+      "dateStarted": "2021-10-13T19:15:52+0200",
+      "dateFinished": "2021-10-13T19:16:17+0200",
+      "status": "FINISHED",
+      "$$hashKey": "object:192"
+    },
+    {
+      "text": "%spark\nrddsplit2.collect",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-12T18:07:08+0200",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres28\u001b[0m: \u001b[1m\u001b[32mArray[(String, Array[String])]\u001b[0m = Array((hdfs://localhost:9000/tmp/ling-spam/spam/spmsgc99.txt,Array(Subject:, ', t, stand, !, dear, internet, user, :, sound, familiar, ?, =, 92re, relax, front, tv, ,, enjoy, f, avorite, program, sudden, cut, screaming, voice, booming, music, commercial, hair, end, y, ou, scramble, remote, lower, volume, ., returns, barely, hear, talk, grab, re-adjust, once, again, annoying, isn, 92t, change, channel, station, loud, hardly, consta, ntly, adjust, 96, down, automatic, television, regulator, &trade, ;, -, manufacture, sony, tm, wouldn, great, alway, stay, exactly, whe, re, want, news, automatus, c, (, \", tvsr, ), solve, problem, technology, breakthrough, patent, computerize, device, fit, palm, hand, easy, install, simply, pl...\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=30",
+              "$$hashKey": "object:1043"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634054754034_1624931305",
+      "id": "paragraph_1634054754034_1624931305",
+      "dateCreated": "2021-10-12T18:05:54+0200",
+      "dateStarted": "2021-10-12T18:07:08+0200",
+      "dateFinished": "2021-10-12T18:07:10+0200",
+      "status": "FINISHED",
+      "$$hashKey": "object:193"
+    },
+    {
+      "title": "Function \"computeMutualInformationFactor\"",
+      "text": "%spark\n\n\ndef computeMutualInformationFactor(\n    probaWC:RDD[(String, Double)],// probability the word occurs (or not) in an email of a given class(spam or ham)\n    probaW:RDD[(String, Double)], // probability the word occurs (whatever the class)\n    probaC: Double, // probability that an email belongs to the given class, p(class)\n    default: Double // default value when a probability is missing\n):RDD[(String, Double)] = {\n    // get RDD where \n    // key = word\n    // value (probability the word occurs, probability the word occurs to a specific class)\n    // i.e : (word,(p(occurs),p(occurs,class))\n    // use leftOuterJoin to get none if no proba found\n    val probWJoin: RDD[(String, (Double, Option[Double]))] = probaW.leftOuterJoin(probaWC)\n    \n    // same as the one above, however\n    // here we replace when the probability probaWC is missing\n    // (when we have a none returned by the join) by\n    // the default proba\n    val factors: RDD[(String, (Double, Double))] = probWJoin.map(wp => (wp._1, (wp._2._1, wp._2._2.getOrElse(default))))\n    \n    \n    //Computing using the given formule \n    // Remark :\n    // we need log2 but we have only log \n    // we use : log2 = log/log(2)\n    \n    // log2 = log(p(o,c)/p(o)p(c)))/log(2)\n    // p(o,c)*log2\n    // for each word : (word,p(o,c)*log(p(o,c)/p(o)p(c))/log(2))\n    // supp wp is (word,(p(occurs),p(occurs,class))\n    // wp._1 = word\n    //wp._2._1 = p(occurs) = p(o)\n    // wp._2._2 = p(occurs,class) = p(o,c)\n    factors.map(wp => (wp._1, wp._2._2 * math.log(wp._2._2 / (wp._2._1 * probaC)) / math.log(2.0)))\n    \n  }\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-13T19:14:50+0200",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "editorHide": false,
+        "fontSize": 9,
+        "title": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mcomputeMutualInformationFactor\u001b[0m: \u001b[1m\u001b[32m(probaWC: org.apache.spark.rdd.RDD[(String, Double)], probaW: org.apache.spark.rdd.RDD[(String, Double)], probaC: Double, default: Double)org.apache.spark.rdd.RDD[(String, Double)]\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1633968682636_72061185",
+      "id": "20180923-211901_247460133",
+      "dateCreated": "2021-10-11T18:11:22+0200",
+      "dateStarted": "2021-10-13T19:15:58+0200",
+      "dateFinished": "2021-10-13T19:16:21+0200",
+      "status": "FINISHED",
+      "$$hashKey": "object:194"
+    },
+    {
+      "title": "Read the data",
+      "text": "%spark\n\n// Read the directories containing the data\n\nval (pPresentGivenSpam, nSpam) = probaWordDir(sc)(\"/tmp/ling-spam/spam/*\")\nval (pPresentGivenHam, nHam) = probaWordDir(sc)(\"/tmp/ling-spam/ham/*\")\n\n\npPresentGivenSpam.collect().foreach(println)\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-13T19:15:00+0200",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "editorHide": false,
+        "fontSize": 9,
+        "title": true,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "(^��Mz�t\u000fm9;�\u0004Gdb��Mb��<��{�c��#��N��r�có/��P@�B9Ț'\\nS�K��Xʁ)��K�`z�B�\u001b�\u00194�E��5\u0012�J�A�AC;�Q'��D���I�QIH�\u000f:����Ŭc*�����A�T�>!�\u001c��j�\u001dd����>,0.002074688796680498)\n(R�ˣ\u0019j��P\u001a��Mc��4�TU����A�\u0017oz'�\u0010S闞�Q,��CKcLg`��$�Olr�hLj8\u000e��\u001b�WJrQ\u0019�8�̍\b'\\�8�ջ�K\u00139�\u00102v,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000\u001aXnGwh�2\u0003\u0000\u0000�\u0006\u0000\u0000\u0010\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(�\u0001dp�'j,0.002074688796680498)\n(0\u0006���b�\u001b��^D7�U_�`�¬����a�\bPɓh+!\u0007(È,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u00005XnG�jJ��\u0000\u0000\u0000d\u0001\u0000\u0000\u0011\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(�\u0001|K�)j,0.002074688796680498)\n(9���5`�lSH\u0000�\u0006-̈vR3tP��\u0003,��qY�9�d�\u0019\u0002[W\u001d�3\u001aN����l��&�\u0003�9�ٴ��\u001b���뱳��h�!7��\b}\u001a��C�}\u0004=�S��.��(D擢�%\u001f��\u0016�9�1���$4t�v\u000f��\u0004��[\u001d������G^\u001fi�I�+�����*<�1���?E[[便F�~�K�,0.002074688796680498)\n(��\u0003Ξ\u001e\u0010�(�\u000fYi��4��\u0010\u0015��2�,0.002074688796680498)\n(\"�u*m'>,0.002074688796680498)\n(\u0000\u0000\u0000Jp\u000e\u0000ham/6-838msg1.txt,0.002074688796680498)\n(&\u0002\u0012Ɗ��npR-V;�AH�\u000f��DI�K,0.002074688796680498)\n(��H%��>��\bӱN\u0011�Z>\u0007��x�)�k��÷�w��+M�u�q�·9J��8,0.002074688796680498)\n(\\>�HՅ�#��x.�ب��W��|6j�\b7�+�\u0003%I���zF9�\u001c�\u0017-E�:(�l���M1��\u0015m�����v�^�g>\u0019-}��\u001f՘���S�w|�5=j[1�}#�1���\u0019;�%�\u0015tf-��\u001cA�\u0005��n�T��\u001a�\u001c=��u��\u0000\u0000lQ�􏻪��A�#�G�4���F�A{Fo,0.002074688796680498)\n(\u0007�B\u001b�\u0002�\b�\u0010��r\u0015�8Fk��՝\u00111��\u0002��\u001c��P\u001b�unn��4`�,0.002074688796680498)\n(x��]3����\u001fFL\\+���\u0018o��ѭ��us8rl�\u001f�8s3,0.002074688796680498)\n(@t@���+�XJ\u0007^,0.002074688796680498)\n(�J��\u0001�Q�GRs����W\"�\u0019�:E$#,0.002074688796680498)\n(eլfm\u0004v�1\u001e9\b����X�4\u0007�\bD�����h\\�������\u001eS-\"���t�Ͷg�o����Ŀ{�X�˭�ZL�~\u0018�/�<�:���Ce�\u0014�\u000e{���pY:\u0018\u001c�,0.002074688796680498)\n(�\u0002_nA�~\u000f��i��|���L����,0.002074688796680498)\n(\u0004\u0006�\u000e'��,0.002074688796680498)\n(��S���}\u0011k�V��5{q������\u0010,0.002074688796680498)\n(\u0000\u0000\u0000��\u0005\u0000ham/6-1004msg1.txt,0.002074688796680498)\n(s~��\b7ά`�Zzl'`w>�H��w�sox9�C^��\u0011#����;AI�W\u0015ˑ,c\u0017x\u0010Rѧ�[Wc\u0003����\u0017�@{�KS����w��\b��oߪ,0.002074688796680498)\n(tough,0.002074688796680498)\n(chipset,0.002074688796680498)\n(��+tJ%\u0015\u0007\u001b0.�J�'rL堝�Y�yy\u001e,��ӳ��ؕ�(`fVju�5��v�Ĕ{���\u00175tO�f4\u0004oB�tI���ù�MMY��QxK�-���b\b�-�,0.002074688796680498)\n(�Pa���\u0011S��;�D��6#\u000f7�^m5\u001cUk�ʟ�?T��ra��\u0012v�}8�A�uQxG�\"�6\u0006h+��=I��e�Гf��,0.002074688796680498)\n(�\u0016d*qP��\\\u0014Z�H|\u0012�t��/�]d��%:\u0017�Q�VKl%��<��6���\u0011gU\u0006�Tl��n����\u0011,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000���\u001e�\u0001�,0.002074688796680498)\n(\u0001\u0000\u0000�\u0001\u0000\u0000\u0011\u0000\u0000\u0000ham/6-166msg3.txtmPmN�0,0.002074688796680498)\n(W\u0018�B_���T\b\u0015\u001f=s9��,��,\u0015�-�#\\�Yy\u001b����`d%MD.��\u0006\u001d�\u0018�*|�\u0002��L\u0010��H�'.�,0.002074688796680498)\n(;0^���0��\u0012\u0003}\u0007\u001ew�<,0.002074688796680498)\n(\\\u0003e^`k�\u0003�;�b,0.002074688796680498)\n(execute,0.002074688796680498)\n(b\u0012z�\u0012���X\u000e�3��Ì\u0018��LW�F�\u0006�7�\u0013��!��Ec����,0.002074688796680498)\n(afterward,0.016597510373443983)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000�ǚ�\u001e�\u0001���&j,0.002074688796680498)\n(��wPK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000LWnGxlm��\u0005\u0000\u0000�,0.002074688796680498)\n(x#c��xD�4���d'\u000f'�N,0.002074688796680498)\n(�D�j��>P\u000f��ݹ�\u000f�S�5Ad�\u0000\u0012&V\u0015:�B���D�,0.002074688796680498)\n(Օ�K��πߏ�?,0.002074688796680498)\n(HWQ`^,0.002074688796680498)\n(@\u0001�+�,0.002074688796680498)\n(beleive,0.002074688796680498)\n(\u000e�%�1F,0.002074688796680498)\n(��v��Τ\u0016�xÀ�k��o�v\u0014G\u001aK;A\u001c��\"\u0014,0.002074688796680498)\n(5�e�g��f��yus�W0��\\�q,0.002074688796680498)\n(c���΂�nt-���\u0000�T\u00039��V���\u0010ee�\u0007-#�,0.002074688796680498)\n(��\u0013,0.002074688796680498)\n(�\u0001\\\u000e�*j,0.002074688796680498)\n((���\u0012�g�\u0015�o\u000et���a)��9�r������Y\u0013N�\u0012�6�\u00017n�\u0010^�E�d�?�'�,0.002074688796680498)\n(���ǒeP45(�Bh�Z陡��\u0011���t�=�۸��,\u0019u�[�:4�6�aKզ��\u0003��2Ki�\u0002ѵ8喷�zN�ʾ�Mwp+p,0.002074688796680498)\n(\u000f�z�鄭�:l�\u001b�]��\u0017�\u0006/؉^��_�1\u00151�����lŢz����ۧ�x��{�wx�2���WUv���W����+p_|.�<\u001b�\u0001i�T����M�\u0019����'ב��f��ſe�-庽q�kM����S\u001eš{�\u0015\u001bs�$0���'\u0004�nJ�o�ϛ\\��\u0006���5Hw�����,0.002074688796680498)\n(TGIL\u001d;�NCoϓ���Y��:�����_���Bi������,{����ݻI�D�\u0006\u001aB��g�x�Φ\u001c�5�(�1\u001a!\u0019��N�5�Z<;�a\u0010�t�,0.002074688796680498)\n(e4slptlksmoehdfcqsdawfp7eyk5ovjzczlsukjjyzfsuie5osfcqnuunepjaxapmysunaaqgck5,0.002074688796680498)\n(�\u0001�R�,j,0.002074688796680498)\n(178,0.012448132780082987)\n(749,0.002074688796680498)\n(\u0000ham/6-806msg2.txt,0.002074688796680498)\n(\u0001��\u0015��1\u0003�4\u001dG���)йr�\u0002J�\u0013\u0001��ύ��g�Y\u0019y\\b\u0006�^O���Mղ)��]�,R\b��}��\b&\u0004���k��9\u0014zL��\u001a,0.002074688796680498)\n(֗��C��=�^^�z\u00037�\u000e\u001aLà�����?0%\u001f��(��B�UV����\u0007�����\u0016�zW\b��̷i��\u0003���\u000e�\u0001��C\u0002TENJx\\�\u0005\u000eo�諸��(��\bk�ϔ㴱������޶&f��R�\u0006I\u0001b�/}��\u0019�g�,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000KWnG��p�N\u0001\u0000\u0000�\u0002\u0000\u0000\u0011\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(�\u001d�=\u0001P�\\O�š,0.002074688796680498)\n(��K�4�o��m0BLe��m��V�AR��xq�,0.002074688796680498)\n(U�G�)ʮ���\u001bek2��4\bC,��,�9����4Jܠ�g�,0.002074688796680498)\n(4x,0.002074688796680498)\n(���~E\u001fj\u0010U;��\u001d=�9����׏�\u0016�y巃��\u001c@,0.002074688796680498)\n(\u0000\u00001\u001a\u0000\u0000\u0011\u0000\u0000\u0000ham/9-539msg1.txt�XI��0\u0014�s,0.002074688796680498)\n(\u000eDӐ,0.002074688796680498)\n(tY��h1,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u00009�\u0016�\u001e�\u0001\u0006\u001c,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000Ė��\u001e�\u0001�Ph*j,0.002074688796680498)\n(���]�\u0012\\۲��q4\u0015�T;��r�\u0013��&��SL$d+X�h�F\u0014�8�Y��X���c����ڹ��p���G�\bl�m��<�\u0007\u001d2�oF.A�6��&\u0019u��Ǿ���,0.002074688796680498)\n(������jg\u0018�����G�}�`'\u0017DM\u00148D���v�\u00070F���K+^���7���T�f\u0017~�q\u000f�����W!LW9��Q.��~.�(�\u000e\u0003R�����õ\u001e\u001d@�\u0015K�[��m���e�*��]��#^�`\u0017�\u000f��G�\u0015�y<<=�����[���;���\u001aR���\u0015�\u0010mD�������r\u000f��~�\u0003PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000RWnG9<,0.002074688796680498)\n(itchy,0.002074688796680498)\n(��<�K���!�\u0011�h\u0016\u0011ڈ�,0.002074688796680498)\n(<\u001eՌ��2��d8�v:\u0005\u0007\u000e�]�$���z�Ë�v���7��G�P���lF9�ZY$7���sh�rP�T,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000���\u001e�\u0001\u0005@�&j,0.002074688796680498)\n(���ɬ�15W1\\U��aկ\u0001o�B6���Oc|o4x�>�&\u0001F\u0002�S�\u001f�\u000e�-�\u000fբ��PS�]׈���\u001b\u000f�������kS?�n8a�5��\u001f�>��É\u001c���\u001bv�\u0012�H/��w�ԟ4���\u0010\u0012��u�\u0007PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000YWnGŒ�(�\u0001\u0000\u0000�\u0003\u0000\u0000\u0012\u0000\u0000\u0000ham/6-1056msg3.txtm�M��0,0.002074688796680498)\n(X�+$�Q�\u0014\u001c\u0012�\u0015����\u001dZ��U*�m��WP&B\u0014,0.002074688796680498)\n(��g/]�,0.002074688796680498)\n(ao,0.002074688796680498)\n(Ie�}�N�\u000eV0phB��\u000f�'ʽ[SZ���{\u0007��㍽?���/>��,0.002074688796680498)\n(�\u0001�\u001fh$j,0.002074688796680498)\n('\u001a�9x�\bؖ�w\u001cGT��\u0005��X�PHD�+3o6d\u001b�<*\u0006�,0.002074688796680498)\n(��)�,Z�\b�MW�E{��@�i[�,,0.002074688796680498)\n(39624,0.002074688796680498)\n(��u\u0017[O�g\u0013�X�:�\u001b�H�\u0011�K�,0.002074688796680498)\n(\u0005�{aLa���8ս\u001b��@�h0�LN,E�\u0012������?���T�>vv��A�\u0018�\u001bUg��-�-\u0018�U-��&`�����m�\"X��YO�>�\u0006��\u001c\u0017\u001c,?��2��h\u0016u�,0.002074688796680498)\n(�C����\u0001�A!C2��4�\u0012��\u000f�V����7}\u0000�����?t��\u0002��-c��w�,0.002074688796680498)\n(8$�\u0011JȂ֩,0.002074688796680498)\n(regulator,0.002074688796680498)\n(��NW��g��0%��,0.002074688796680498)\n(�X�=�{Ȇ�Óc�,0.002074688796680498)\n(�w1\u0002\u0002\u000e>��\"���X,0.002074688796680498)\n(��'5�\u001e4rYu�\u0001HKK�\u0005\u0017��њ#�\u000f��}\u0001a��T\u0012��\u0000�Ll}\u0013���tks�D�\u001eTk��L=,0.002074688796680498)\n(�y�\u0017\u00056ͅB�ڄ��\u0017\u0017�:���o�\u0012���%�z^l\u0000���B�x�V���������@=\u0010���\u0015)�T�K_ab�,0.002074688796680498)\n(���\\0��;Fm\u0006���߉�u\u000fд�1O��\u0011����\u0018�C�\\����\u0013�\u001a�Cv���f$�݊�S�\u001e�����\u0013����-\u001e�3�\u0018����I�3���JJ�r��J.G�\u0015=�M-[��0\u0003��^\u0015˅�\u001a,0.002074688796680498)\n(\u0000\u0000\u0000B�\u0011\u0000ham/8-1158msg1.txt,0.002074688796680498)\n(���R�,4������G�,0.002074688796680498)\n(��D�6��\u000erJ�v�����8}�U���\u0019�\u0001�.�ו��w��\u000ehii4MOC��R�X��Z(�)�ݱ���\u0002SS�����>a�ŏ+뺑�P�T�*\"�\u0014��\u0004T\u0006Bb\u001cM��\u001c��\u0013)[3\u0004�JI8\u001a�8F��f�\u0019fF\u001b���b�J)��g,0.002074688796680498)\n(viewed,0.004149377593360996)\n(unforeseen,0.016597510373443983)\n(museum,0.002074688796680498)\n(U�9=���\u0019�_����;\u0001}��(Rq\u0018{\u0007�A�y��{{�Q=yO����$�\u0007j,0.002074688796680498)\n(��\u0014�5�Z�-�N�U��\u0013�\u0014,1���QO�G9��3]HC�\u0004އ�~�����Dl2i����\u0016��s�8%V\\&��P�,0.002074688796680498)\n(\u0004M�D���\u0010\u0014��f>H\u0015����\u001b1��6��4$��\b��;�\u001e��|�L�bVy�,0.002074688796680498)\n(�\u0001\u0002Y�p��D2����\u001aT��hz�\u0002��R9\u0005Q�\u0005�\u001aքLd�]B&����J����%���(�;�,0.002074688796680498)\n(LvչO��~\u001e�G���YK3�d���6:<\u001fDĬ��K�I1OIW3�#?u>�^�Sgbۋb��\u001a�b,0.002074688796680498)\n(+�\u0015\u001e��a0N܂3%�,0.002074688796680498)\n(:BoN_��?�_���2j2������o���>�To\u0013e��,0.002074688796680498)\n(Ј\u001e0\u001f���\u001cq�A�\u0002$;a�)\u001aePB,0.002074688796680498)\n(�\u0001����\u0017u�z����7,���Ƒ\\�~M��Wڬ��[z��\u0013��v���3m�kЬ�r.,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000#�ߺ\u001e�\u0001�$&j,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000�.\u0013�\u001e�\u0001�:?-j,0.002074688796680498)\n(841-6242,0.002074688796680498)\n(����g����6,0.002074688796680498)\n(\u001e����l\u0005�KϾ�j)\u0006x�Ek�,0.002074688796680498)\n(�\u0013\u0003�K\u000ei,0.002074688796680498)\n(������|�鏽��g�\u0004!�<,0.002074688796680498)\n(�\u0013z��Q\u0013bUV��C�����5��@J\u0007QH��\u0000\u0003��T$H,0.002074688796680498)\n(��f��+*s��R\u0015)\b����幭Ǚ��^�ޑ\"�^��`��&��/\u000e\u000e1Tc\u0012-U�sŗ�\u001cC�̃���?�\u0014�\u0001x���6������3И=�q-�l��A�Q�\u0013�����\u000f<�\u0006���\u0011&o1�*���brW����\u001f\u0016\u0007�x�l\u0001;\u0014]�۶,0.002074688796680498)\n(\u0002����\u0017^�\b��u��ԉ��\u001b��sf���e��\u0000U�f�=��̙q>��'��{1�\b&jaƨ���89ۊ��Zܧߝ;^\u000f�&�蓊ƍ⨭�E#n,0.002074688796680498)\n(�\u0001}i\u001a�V-\u0005hƧ���W�,0.002074688796680498)\n(X\u0010,0.002074688796680498)\n((���\u000f�,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000�\u0001��\u001e�\u0001�w�&j,0.002074688796680498)\n(\u0014��S�^W��muW]��w�3\u000eMH�%\u0010��Ƨ�;\u0007HZ/��\u001d�m�ù�H������W��*\u0004�Q2(q\".�#�|����EU��3b..n�p�h�Ī\u000f������H��}�^FU�W\"�A\\aI)Q\u0019\u0019�n4��,0.002074688796680498)\n(w�E8\u0017J�2�\u001fi���>Ct��\u0012�i-ח����c]�'�{�\u0003,0.002074688796680498)\n(ݒ��\u001bAv\u0003U��}d��﨣���/,0.002074688796680498)\n(alternative,0.012448132780082987)\n(s��8�Eo�yj��{Q\u0014[I1��`=N�a�\"��K�0�pm9ZHu�߷_<�x7�ѝ])\u001c&��Y����\u0002p�(\u0003}����\u0002����\u0017PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000\u0003XnGi����\u0004\u0000\u0000_,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000E�ź\u001e�\u0001��G*j,0.002074688796680498)\n(^�k8\u0018YzZqT\u0014\u001c!f9��9\u0015>�\u00045`���L.:���s�g��Lp��}��k��9�t�n�ݦ\bԊ\u0003�}b0�:S���Ȟj����:�\u0011φ\\\u000f���m\u001fZ�#��j�ٯ��J�\u0006�ńT,0.002074688796680498)\n(ziaza99,0.002074688796680498)\n(��0\u0019[�h�EYC>`k,0.002074688796680498)\n(�\u0002����a�S��z���\u000f��6�����$��\u0018)_\b,1�!t�ս�\u001c���,bQ����)��&\u0010�kCP��ʡia\u0007ք���+���I�):\u0002����t�\u0016)��ȴ�,0.002074688796680498)\n(�yeVՑP!s,0.002074688796680498)\n(��\u0015݆��P�!�֚3DB�k\u0000��,0.002074688796680498)\n(�\u0016��d�J,0.002074688796680498)\n(o�8��#��\u000e\u001b��\u001e���\u0011����f��+:\\.Gz����c��\u0002w��)�\u0016�O1l�\u001e�'`軰�=o��\u001e,0.002074688796680498)\n(,M,��S\u0018\u0013y,0.002074688796680498)\n(sequence,0.04564315352697095)\n(�\u00017�,0.002074688796680498)\n(�T�9�_��Ȟ\u0003�CR�\u0000�T=yJ��3.;cթ�\u0017*�6�ZΓY0I\u000f章�<�Z\u0007�\\��5�M3�X:���~\u0016�,0.002074688796680498)\n(���8��Ȧ?^��Z�y�7\u001d�R�0�RvΞ\u00020f�~>[�!\u0016̮ic��U��P,i�J�`-�Rt&��h'm��C�m��?���\u000eq_\u0005\\�z���\u001b\u0010�\u0012��3*�2\u0017M,0.002074688796680498)\n(\u0000ham/6-362msg1.txt,0.002074688796680498)\n(�\u0017��s���f��\u001bPK\u0003\u0004\u0014\u0000\u0000\u0000\b\u00004XnG�mp�\u0004\u0000\u0000�,0.002074688796680498)\n(�\u0016&,0.002074688796680498)\n(syngen,0.002074688796680498)\n(��ܻ��,0.002074688796680498)\n(sportsfans,0.002074688796680498)\n(right,0.23858921161825727)\n(�����\u0010r�\u0013��\u0019���\u0002aS9�XB���g\u001dc�i�\\j;���q<�r��`�\u0011$\u0001�h�jɂ��y\u0012/\u0011L�\u0014��Õ���ɛ��,0.002074688796680498)\n(��ջ�\u001cr�r��;�\b,0.002074688796680498)\n(2]i6-\u0000�\u0000�x\u0000iFt\u001c��O\u0010�u�$�\u001eqa\u0015\u0007Q�,0.002074688796680498)\n(Z\u0019����J�'��4�\u001c�1����a�YEV<,0.002074688796680498)\n(rvO����ҏ��ˏK�(�zl�/9����L{)�!ߣD���,0.002074688796680498)\n(�\u001cf�����u\u0002\u0003��C�~\u0003$�s��;��Y7�jB0U��Y{m\u001b]�IE�\u0006>u�D��\u0017_�ƶ�1�z�����m������\u0014,0.002074688796680498)\n(]�\u0015+�����n(�y��\u001dC��ͭ\u0016��؊Ґ+)\u001c%+����M5DH�]�ʐ\u0012\u0014�2�U7ȭ�}�N�׬#R�\u0013�]$�nNBT�[��R�d��hnQ�\u0005��fM�w%L��8�=�,0.002074688796680498)\n(�n\u0013}4;\u0016GI3�G��Tz����\u0000�\u0018����r_s��`\u001d�\u0004�����h\u0013e�h��\u001avx��8�@��z̕Q\u0016[�,0.002074688796680498)\n(J��xH��->\u0016��w\u0002ֳRI�,0.002074688796680498)\n(��S�.�HA*C��\u001c5�U���2.�\u0004P$\u0013I�2Aw`�,0.002074688796680498)\n(�䡳HA�\u001bl�\u0006�Wd�D��,k�\u0014��������r_@�\b�#�h�\\\u0019Z\u0018�'(U,0.002074688796680498)\n(\b��,0.002074688796680498)\n(\u0003�]�\u001f�o�l�,0.002074688796680498)\n(\u0000(�����Y=�V�����9���\u001b(V��\u0019w?�7�N޵J�d@\\c�\u0019��w0�\u0011\u0017�Ѳ��^�l�@�\u0007�\u001a'4����{s\u0000��\u00152;�j1I�Y���\u001c�����t�\u0000O5������\u001dl#G\u0001�\u0006�c�Q�<M�iN\u001a~])�J�S��\u0006�#�Ry\u0005\u0010�`_�\u000f�ā\u0002�S�:e�i?���y[x\u0006{\u0014�\u0019m,0.002074688796680498)\n(��7��$���l�'!4�\u0001�,0.002074688796680498)\n(e?2,0.002074688796680498)\n(�O��B\u000ew\u00052~,�o5��:W\u0003��\u0004ڕ��A���\u0000�8�\u001d�B��0�c-\u0010H=L������A�v\u001e\u001bY\u0001��ѹ�.�@�Q��\\6�6\u0007%�����\u0002WU�#(��ӡ��`�b,0.002074688796680498)\n(\"��Vk�O�<\"\u000e\u000f��߯\u001a0\u000f����,0.002074688796680498)\n(arround,0.002074688796680498)\n(��K��̎�)�(���ʈף�\u00158=[��x{q^�V��\u0017yz���i,0.002074688796680498)\n(���T\u0010.&;OO�_�JI���o�G\b�b:,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000KWnG(�\u0014o�\u0000\u0000\u0000H\u0001\u0000\u0000\u0011\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(}�&<\"�Tt9�\u0014\u001ft���+J\u0019^\u000fT4+;�,0.002074688796680498)\n(photograph,0.002074688796680498)\n(\u00028���Z,0.002074688796680498)\n(�\u0001kQ�*j,0.002074688796680498)\n(\u0005�}�^�i\u001f}�g���IJO�t\u001a�^(���\u001c�Ĝ�S˃�QȧT�>h���\u000f��\u0015�5�{��-��\u001dMؗh�ؾ<\u001cW�.k#��V���uy<�q\\:vB��])#��\u000f�<r��4��db��\u0007���\u001b�#\u001b\u0005y��KoHξ��\u001c�>\u0016�\u0000,0.002074688796680498)\n(impute,0.002074688796680498)\n(\u001f�\u0014Fd\u0003��\u0005�U8]\u0012��4����\u0019)��i��l�ŧ>�>��\bw.g\u00003�\u001d�bK\u0004���aO�t\u0005HI&�#�,\u001e!��v�-!�g\u000f?Cl��%\u0015���@�^(�[*3��Hv�u^\"\u0006���&��j_�2]��7�\"\u0002�q#��SsX�e\u001c\u00109b8!)�\u0004��|w��^O\u000f�E��\u000e\u0005*�,0.002074688796680498)\n(.��ڝ3#�)TYPM�@A����٘fZ/Ȯ5�{���\u001c���ct�D4��$\u0012Ec���=NV5ͥK�]���#,0.002074688796680498)\n(0��:�)�A,0.002074688796680498)\n(���PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000LWnGj��,0.002074688796680498)\n(�-�'��\u001c�_�\u000f�M�\u001f,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000\u001dt\b�\u001e�\u0001��0-j,0.002074688796680498)\n(seeing,0.002074688796680498)\n(printshop,0.002074688796680498)\n(��\u0001Lg\u001aǖ��#�8?jw϶ܑ5��hFNoޜי���,0.002074688796680498)\n(1998,0.0975103734439834)\n(Z��L�\u0006�\u001b�\u000e\u001bg,W�\u000f4HTmC�u�l?aN�I,0.002074688796680498)\n(�򉮢#c\u0003I,��\u0014I�x�)nY9Z&'�\u0014\u001cy���|vvA�c�\u0018��Wt���O�\u001f���Fe/A\"�b�z5��j�(3,0.002074688796680498)\n(���/zT2�A@ǉ{��.�F,0.002074688796680498)\n(east,0.006224066390041493)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u00007���\u001e�\u000131�$j,0.002074688796680498)\n(wH<t�\u0007�\u0015������/�a\u001ar���\u000f/\u001a�'\u0011�N�\u0003+.�<Pz�8�����������\u0016Ns����Kq�W��Q�A�],0.002074688796680498)\n()��z��Č<\\�\u001b�-��AR�\u0007x��\u0012�\u0011,0.002074688796680498)\n(|�Wp��\u00128iФ}�?�,0.002074688796680498)\n(�<V\u0001f�ص\u0005����\u001a\u0017\b�f�u4�\"��Of,0.002074688796680498)\n(�)\u0000?Hj�,0.002074688796680498)\n(lines,0.016597510373443983)\n(��\u001e�\u001bM\u0000������������.�\u0011��Z\u0002IȤ�,0.002074688796680498)\n(���w&\u0013\u0012������Ҥ�������,�ղ���l��Kq���@j�\u001d\u001e\\�81>��盆<\u001e��?\u0011��w��B�\u0005�Ic\u001f�G���5���7\u001c8K��@\u0001\u000fpǃ�rVޫk�g<\u001aD\u001dq��1v��\u000417eτesjl�\u000e?�\u0016<\u0001�E\u0016�^I3�r\u0012s\u0001���c\u001dF�O��?q&��(ˬcҨ/���U�,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000�г�\u001e�\u0001:��(j,0.002074688796680498)\n(�8���nv��\u0004\u0007��j���~,��\u0005\u0010O\u001c@�,0.002074688796680498)\n(\u0000\u0000\u0000\u0002\u0019)\u0000spam/spmsga145.txt,0.002074688796680498)\n(f�e��BU\u001c\u0013�\u0015�W��%��ݭ��~i\u000f���#�5�����q��\u000f\u0000PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000kWnG!���#\u0002\u0000\u0000�\u0004\u0000\u0000\u0011\u0000\u0000\u0000ham/6-778msg2.txt�SI��0,0.002074688796680498)\n(*U�0�$u\u0007�{�.u/���X\u0001��\u0002��,0.002074688796680498)\n(�!�P˱7�,0.002074688796680498)\n(�\u0015�\u001e�\u0001��_-j,0.002074688796680498)\n(623,0.004149377593360996)\n(1�%��5,0.002074688796680498)\n(\u0011:�~O�o�\u0002��Q���������+ک��߮�\\n�/?���������OPK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000\u0012XnG��\"\u001b=\u0005\u0000\u0000\u0006,0.002074688796680498)\n(\u0004��\\�GQ\u0013R��U,0.002074688796680498)\n(^Ԗ�J\u0003@�\u0019bA\u0017�-��m􁀐��U�C�Pr�����{*BJ8R�s¾.�t��0;f��G\u0014g�,0.002074688796680498)\n(C!�Z/#e�\u0015\u0012�Zcj��\\�H\u0002��e\u0016�\u0011S�x\u000e�̣I,k�ߑ\u0003E?FL,0.002074688796680498)\n(��G�\u001b\u001e�bm�\u000fW<��Eh�Zz�Ie,0.002074688796680498)\n(.4\u0007�\u0007���l��<@�A�\u0019=1�����Fh:@��T�lZ���\"jD�������^%\u001d�p�����*޴�a���e*^UB}�\u001c���ͬ���@o\u0004�t�9\u001f�\",0.002074688796680498)\n(\u0000\u0000\u000f\u0000\u0000\u0000ham/9-3msg2.txt�VI��0\u0010�s��1\u0014?,0.002074688796680498)\n(��پX�\u0019INb������a2�lIw{�{�׹ى+�T�Qﭐ�\")rQ���^�{��A�Dj�B��b\u0018��~�;���\u0017/,0.002074688796680498)\n(\u0000�+d֛Iu3\u000f�H\u0005{\",0.002074688796680498)\n(����\u0004�9,0.002074688796680498)\n(align,0.002074688796680498)\n(\u0000\u0000\u0000�\u0001(\u0000ham/9-975msg1.txt,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000\u001bXnGCOL1f\u0002\u0000\u0000�\u0004\u0000\u0000\u0011\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(\u001a����㚾\u0010�}\u0019Me����u�,\u001b�B���9M��,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000\u001bXnGN�'��\u0006\u0000\u0000@\u0010\u0000\u0000\u0010\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(robert,0.012448132780082987)\n(eng,0.002074688796680498)\n(unlist,0.012448132780082987)\n(\u0000\u0000\u0000�M\u001b\u0000ham/9-1626msg1.txt,0.002074688796680498)\n(���2�!\u0007�\u0004�p\\\u000e=1Rk��Ez�$�dx�R]v����ft�;ɨf�R�b��tSJ\u000f�,0.002074688796680498)\n(`�t\u0002�O-��\u0007��^�U��?B\u0018\u0007}謰g���ׅ\u0002��Ʊ�%�w\u0012��������jX|�\u0010\"\u000e�\u0015:�\\ư�\"~��㔟�.\u000e�B\u0012\u0000!f��\u0013x�\u0016?\u0014Hq\u0006��P�\u001f�{6��V\u0007�Ef�\u001dK*�!h�\u0011\u0002��\u001f\u0019z���6�\u0004�tr%rk�\u001e�.5�b<��\u0002���eqS��\u000e�_\u0010@�s9��2�\"bc��q�߿\u001bb�`_�~W�I-K��,0.002074688796680498)\n(�.�t�r\u0019�S\u0004��O�K�Q���3a�\u001d��D�\b\u0011\u001fn\u0013�(t\u0014V4/��X��\u0018��8\u00160���ҷe\b�reѫYQZ��{�\u0015jXf,0.002074688796680498)\n(gcs,0.002074688796680498)\n(PN:@�7��0B\u000f�,0.002074688796680498)\n([�8`�8}Ԗ�\u0012\u001bד\u001fa��\u000e�)\u0019\u0017&�~��\u0013�xnD�I�:�s�R2D�,0.002074688796680498)\n(���|.t9�8��\u0016P��/�-�\u0013�A�Y\u0014,0.002074688796680498)\n(Umɋ�\u001c�\u0004���>~i����c�\u0016�C�R�c����Qq���J�~M�J\u0012Y��<�\u001bj�)�j,0.002074688796680498)\n(QR��\u0011Z\u0006,0.002074688796680498)\n(16mb,0.004149377593360996)\n(L�P;�9\u0012�j�cc�,0.002074688796680498)\n(a0especially,0.002074688796680498)\n(\u0000ham/6-380msg1.txt,0.002074688796680498)\n(@�ef3r��eI\"��`���c��Uʠ#��J��8��R@`;/\u0004\u001c�o�j�Ϻ\u0018�4�\u001f�x#0ޞa\u0018�Q!���\u000e�$�D,0.002074688796680498)\n(XnG\u0014�e҅\u0002\u0000\u0000,0.002074688796680498)\n(�\u0001�\"�&j,0.002074688796680498)\n(F�V�u*�K�\u001fM\u0007�\u0017F,,0.002074688796680498)\n(K\u001ft:4Q�XꘔR�s��\u0007����,0.002074688796680498)\n(classifieds,0.004149377593360996)\n(����\u000f5�^|.�/�Ï蘾�\u0000�)$�}��2hh|jUa�G��\u0007�\u000f>�\u0016k~�\u0006���^�\u0007�{��@?)�\u0003�W\u0006�l�\u0011!q�>���ٍtx�jb\u0010e�=�#��\u0016,0.002074688796680498)\n(H;�,0.002074688796680498)\n(n�,w�>94Nq\u0002+�X'��|K\u0002ݟ;\u0010j�\u000eqQ8]L,0.002074688796680498)\n(hour,0.26141078838174275)\n(\u001a��o|1���\u0017���)Q+���\u001a��y�\u0019�\u0001��>0{�~���э)����(垞]5�~\u000f_�Sz����&y�>�$�7�E:��\u001eS:܇��B�\\S\\\u000e\u0005�c,0.002074688796680498)\n(�\u0001d�,-j,0.002074688796680498)\n(��\u0012�ލA\u0005<O�V�Z�D\u001a�\\�=��J\u0019k9l%,0.002074688796680498)\n(�xM�K���n�h���-���3�\u0004k\u0012��Inw��&��0m\u001a<������si�d;\u001f�7��ۂ�xY���������\u0019\u0002o�x�c\u0016\u0005�ru�ݷ�}��y�;�.o\u0017\u0018P|`��P]Cj��b�ߌ@�x�\u001c�\u00058<K�фw�-�{�Z\u0006h1@�\u001e��),��IDovc�U\u0015�:���\u000eH��\u00197�N�כu���Q[��ڐШ��=�)`���\u0001��M�\u0001����\u0016\u001e�r�|��a\\��a���\u001f�fzJ7�7\u0014�\u0016̝��\u0017����[��Q�0)���|��3�[u��]�\"��N��P,0.002074688796680498)\n(e\u001cJ5j\u001d�\\�Ԝ\u0011t��\u0019,0.002074688796680498)\n(\u0015XQ�\u001c�\u0005�v�0R��,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000���\u001e�\u0001Xb�%j,0.002074688796680498)\n(�L~�\u0019�\u0000�<;�,0.002074688796680498)\n(\u0000\u0000\u0000\u000f\u0010\u0000\u0000ham/3-378msg4.txt,0.002074688796680498)\n(�^=��N\u001e1��\u00193\u0003S9��\u0005E��7���|\u0006�Z�����_��K��\u0003��\u0006�n�s\u0014,0.002074688796680498)\n(��I�\u0010�-�\u0002�8��\bI\u0012~�T5\u001cǃK�Y��u�\u0007,0.002074688796680498)\n(N\u0007�.$�֮����Ǹr�����K�)@s�&Q��\u0015\u000f,0.002074688796680498)\n(�\u0003�{F+FLi�\u0019�=��R���;\u0011�ő���g>M�ޭ/�k����<,0.002074688796680498)\n(springer,0.002074688796680498)\n(i�\u000e&�\u000f\u0005wQz��\u001f\u0004����{���.c�i��͋\u001c\u0012�ϔ����T��>f2�)�C^�X���\u000e�!�#5���\u0003,0.002074688796680498)\n(\u0000\u0000\u0000\u0003�&\u0000ham/9-882msg1.txt,0.002074688796680498)\n(��JoC\u0003(mx�<4���-�Դ����,0.002074688796680498)\n(�o(��{�,0.002074688796680498)\n(Ƣ;�w�y,0.002074688796680498)\n(݈4Nv,0.002074688796680498)\n(\u001e`=L�b\u0006D��\u000f27�6���rl�)�\u0016\u0014�8�Ҩ0\u001fp�e\u0016�\u0004�{<�M�pp�����.}'L:x�\u0016�ްH�\u0005u�P���p�G\u001a\u0010��\bJ-KrN��0GJ�\u001f�n\u001d���i�\u000e�\u0011!M�,��4*�o\u0010������\u0000t����k,0.002074688796680498)\n(ukinternet,0.002074688796680498)\n(��\u000e�θ�\u0002,(�\u0017�X\u000e�P,0.002074688796680498)\n(윈\u0014jH��1�$@Ik�06w,0.002074688796680498)\n(�&��;`��X���)\u0006\u001d�tSc(,0.002074688796680498)\n(�f-�5�$4R9�O5c��\u0007�\u0002���x�f��ކ�hNr��G����3'Iq����$\u0005�]g\u001b�\u0010^���7�E�U,0.002074688796680498)\n(�o:<�C��6��U\u001c�[�ÿ~\u0002L�,xBQ\u0018ZO�}k�s�j<\u0019\u0017gs�Vf�u-�6�<���t�\u0011�M|���,0.002074688796680498)\n(����~\u001e�x�1�,0.002074688796680498)\n(���\u0002,0.002074688796680498)\n(interfere,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000o'ۺ\u001e�\u0001���$j,0.002074688796680498)\n(��\u001e1�.�J�^`uh�޵�f�p��d4���Mn�#X�lV�\u0001PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000fWnG�^��W\u0002\u0000\u00007\u0006\u0000\u0000\u0011\u0000\u0000\u0000ham/6-357msg2.txt�SIr�0\u0010��\u0015sJ%U�\u0012o�r�\u001f�!8\"a\u0003\u0018f\u0000J���,0.002074688796680498)\n(<��W�I�fΞg�\u0001�N\u0010��!c�\u0005�.a�>0����\")��织5\u0013�$�,0.002074688796680498)\n(��\u0014bb�̀�,0.002074688796680498)\n(�Bt�:-9��l��,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000/XnG�2��{\u0000\u0000\u0000�\u0000\u0000\u0000\u0011\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(n\u000f\b���,0.002074688796680498)\n(\u0017��.r;��lo���\u001d�L~\u0011Kț�#��\u001c�)��^���\u0002�\u0000�,0.002074688796680498)\n(��\u0015N�U\u001b�����,0.002074688796680498)\n(�\u0012\"�=���׺���r�oBV\u0017*�\u000f��V��,0.002074688796680498)\n(��5��\u001c�W�\u0003,0.002074688796680498)\n(��S,��|�!\u0004�\u001a#ٛM���\u0019A,0.002074688796680498)\n(��)Я��ڵ��i��;�\u0004\u0014,0.002074688796680498)\n(\u0000\u0000\u0000nt\u0018\u0000ham/9-1354msg3.txt,0.002074688796680498)\n(��'�F,�,0.002074688796680498)\n(/�T8��N�t-\u001c����J�)��\u0011\u0006�\b�6,0.002074688796680498)\n(request,0.22614107883817428)\n(�\u0001�ګ*j,0.002074688796680498)\n('�\u0006<�k?쯺e\b\u001d:b�)���\u0013F�S\u0003\u001aM\byr'\u000e\u0018V3\u0011�Q˾�\u0013;���F�M�Ƣ��E\"���Vj��Ȕ3w��Y,0.002074688796680498)\n(�C�m\u0014:S^,0.002074688796680498)\n(Ȉ�T[ɭ�yZr��^D��@\u0017�[�n�\u0000��޷\u0002��0>\u0014��^��aN��#ݢؽ[H\u0003���\u001e�!m\u0017\u001f�o�LN\u001f�,0.002074688796680498)\n(�2�)<ۖ$1,0.002074688796680498)\n(ъ��;|\u001aєB6���W���#7z�LW�r���T\u001a�]I>\u0018yv��Z\u0006\u0005�V÷6\u000f�L>p�g\u001d,0.002074688796680498)\n(��S0��mE\u0012��>�\u0001\u001bv��@�h[�,\u0019���;�\u001e%�I�a0\u0012[2?\u001e�Gʿ����K\u001c\u001c'�\u0013�FY\u0013\u0013}�\u001d�˛7�yI�Up�G\u000eK\u001a��,0.002074688796680498)\n(_�x��\u000f�֐�0�m]�e�B&݌@*�\u000es�\u0017��A�����wZ\u0011-��9Zo\u0013���8\u0010�:�K�*���(����\u0002�Q���,0.002074688796680498)\n(\u0016��\u001e�\u0001��)j,0.002074688796680498)\n(�\u0001�kI)j,0.002074688796680498)\n(\u0002���QNô@�8�!�ޒ��`\"�r�,0.002074688796680498)\n(sx,0.002074688796680498)\n(���pƄJ�RN�z4\u0006g�,0.002074688796680498)\n(�C�\u0010�0�\u0017�\u0017괅E\u0007fc�85$M�帢\u0007��X�,0.002074688796680498)\n(vcrs,0.002074688796680498)\n(Ʊ����\u0015���i,tX\u0013\u00107�^\u0014ݍ/�\u0013��@�,0.002074688796680498)\n(�.���᧲��Y9������2I��bD$W�֯�Ic9׃��h�\u001a���td�3�I\u0012�&�T�Т�t5�,0.002074688796680498)\n(�\\��\u0016f,\u0013�BB�?�,0.002074688796680498)\n(�\u0017\u000f�k\u000f�\u0005Y�<��ZRhY�Ҍ\u001e�H���WT�[]8�H�R��=|��D'��%\u0003e\u0014y�v�;#t\u0000o\u00075���6���\u001a��\u000e\u001c�#\u0005��-��\u0003���\u0017��4�,0.002074688796680498)\n(yulema,0.002074688796680498)\n(�r��D\u001a�\u000e&�\u001c�\u0003c-B�9�u08�\u0002��gr������\u0018�ucm����\"��[�9T\u0006Z\u0019b�R�r��ܼ�,0.002074688796680498)\n(B�\u001d�D�}EY\u0013�,0.002074688796680498)\n(�\u001e�\u0001$��,j,0.002074688796680498)\n(�\u0001��6+j,0.002074688796680498)\n(�s\u0017�,0.002074688796680498)\n(,�*\u000f\u0018�u��x�z��h��q�v\u0000yÑ�\u0018���w\u0017�'Sd,0.002074688796680498)\n(p\u0002�0��l�\u0002\"i�Y��j�C�[�;�\u0019���}�츚�wI�W�Ó\u001e\u0017.��>��1�<V����,0.002074688796680498)\n(��g��GN�D>,0.002074688796680498)\n(��\u0007�\b\"׀��qE.���\u0017��\u0014��\u001f�[\\�X\u001a�o)1��c��,0.002074688796680498)\n(Ht�񉄞y\u0000����y-��,0.002074688796680498)\n(wrapped,0.002074688796680498)\n(>\u0017�\"\u000fQ�w�|�I\u0004��Lz�\"���\u0004�;-C.3[=�ß��[\u0006�L�\"��)�\u0007]�q!ʞ\u0003x,0.002074688796680498)\n()����\u0014�c�\u0013\u001b�e����q��_�i\bifg,0.002074688796680498)\n(\u000f��@���t\u001a\u00115Q�R��Ѐ!'I\u001d&*!�\u0019\u0014�\u0019�O��\u0012��\u0003�j���T\u0002j��wW\u0010�!X\u0000�FZ�IZkR7,0.002074688796680498)\n(b�V������Pj$�c����?��ɜ��a1,0.002074688796680498)\n(��\u0019�\u0001K��$&�\u0000\u0018F�g\u000e,0.002074688796680498)\n(\u0000\u0000\u0000=�-\u0000spam/spmsgb87.txt,0.002074688796680498)\n(^��8d��(�Tc���ź��e�٦�,0.002074688796680498)\n(\u000e\u0001\u0000\u0000�\u0001\u0000\u0000\u0011\u0000\u0000\u0000ham/6-297msg1.txtm�AN\u00031,0.002074688796680498)\n(kv�'�E>/A���3��^r$G��2b.yD�\u0000��0��Wy}R\u000f�t�S8S���.��\u0013\u000ey\u0001ˤ��X�fj���Cc�K'��\u0002bʕ�_%ʻ/\u0002�\u0001�f�p�T�@P�UL5bo��r�T��2��\"i�j@0^\u0017���;\u0003,0.002074688796680498)\n(\u0007�S'�����c�9�;z�nj�q6�B�ݮT����;je�\u0006q�L�\u000e�L�]�\\\u0017Xu۬1�\u0001�I�\u001e�\u0017�N�\u0012b���mi�ǭ�O����f�c�F9ɇ<���\u001dV�X$y�j���\u0019ne��eIjT��P8\b�:cs+�2h��W�,0.002074688796680498)\n(��Lr�ޒ�\u0001o�C,0.002074688796680498)\n(��ݛ�PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000\u0013XnG\u0019ޝt7\u0001\u0000\u0000@\u0002\u0000\u0000\u0011\u0000\u0000\u0000ham/9-357msg1.txtmQKr�0,0.002074688796680498)\n(d��\u0001_��i������\u001c[��Ҍ�_+\u0006��d>������\u0002)8$\u001b�,0.002074688796680498)\n(�\u0001�[\u0016-j,0.002074688796680498)\n(\u0000\u0000\u0000��\u000e\u0000ham/6-856msg1.txt,0.002074688796680498)\n(disclaimer,0.012448132780082987)\n(��[�hy\u0012{�Œ\\Z�\u0006�I�X��|��\u0015�+T\u0006eգ��M�B��:�\u0012a=a��:��:�C�t��λ�b�\u0017����\u0015,0.002074688796680498)\n(oٟ5n\u000e��~s��͢~x�^\u0018�!�\u0010,�}FO7��t��ۢ��a���\u0012w\u0014��h���/�{���\u0001�)I<�\u0004t\u0007̇�}��e\u000f9tY�\u0012\u001c/��\u0017,0.002074688796680498)\n(\u0000\u0000�\u0017\u0000\u0000\u0011\u0000\u0000\u0000spam/spmsgc45.txt�XY��0\u0010��\u0014��\u0002,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000#�ߺ\u001e�\u0001�/\u0018*j,0.002074688796680498)\n(��\u0001&�����A\u0017\u0016�J\u001e|��k�\u0019��\u001cM#'�����<xǊ�\u0006�f�?X�\u000fv�iD\u0002�҃Â��)a\u0015�\\\u0019\u001b��XcR*���\u001aW�la:��,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000\u0018�ĺ\u001e�\u0001\u001dc�'j,0.002074688796680498)\n(cdr,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000\u0007�Ѻ\u001e�\u0001~/�)j,0.002074688796680498)\n(��>\u0005v���t�x�;�\u0000\u0019��-�\u0010�!A����S�:ɲ�\u0019Px\u0000~��\u0004?S�Q�DuQ\u000f#�t�R�5�á�N�G�����d����BG��R8tGע$W_a��2Q\u0011�Rhn�iس���$��\u0001�А��z�JQ�\u0017\u001d�,0.002074688796680498)\n(L�;\u0017%�\u0006�X����zٴ�R�����`B;0�BP�&_�\u0016\u0007�Y���\"`�\u0001v�Z\u0005���/�po�K\bM?%�f��Qy��P6����4`=\u0002�K���(\u0010��e��ΠeR�\u001f�@�\u0000\u0006\u0016�7�~s�6\u0013�À�P�_�Tݳ0\u001b�\u0019%t�;��\u0012�x~\u0007\u001e��y��Zdf�0TW\u001b\u0018Z�pǔ=�4\u001a{\u0001�����u�K\u001cS%}\u0007�,0.002074688796680498)\n(�vER\u0016�\u0019X��\u0010ʱ.zq!���b�|�\u001b�,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000fWnG�t\u0003\u0000\u0000�\u0006\u0000\u0000\u0011\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(�\u0013^p'��D6�Yh�����f��S�\u0018�#H+bT��\u00027F�\u0004\u0002;��Q��\u0006�x5�0�T��:;�7>��k,\u0017��O������{�46�n�{��ћ)/\u0007�Q!�F\u0003�P�j�`,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000S�̺\u001e�\u0001Zp�$j,0.002074688796680498)\n(I'3�%s\u0004ը�ȝ\u00163��%\u0011�ܖF\u0012�Be�4��\u0003���\u0015,0.002074688796680498)\n(n�u�\"a�,0.002074688796680498)\n(?�׫��Bt�[������J����ERy�߼\u0019D^],0.002074688796680498)\n(�~�_�:��`��$Tz;�3�%^?���ww���1Z�,0.002074688796680498)\n(Ӊ��%\u001f\u000fy�z��\u0003sD|T���Yt���VškwS�o/4f\u0016�V+:�::\u000f׋q�\u001b�\u0005��p;\u0014M�CW�\u0015�3n���BJ\u001c���\u0019\u0011���\u0002䝒AV��,0.002074688796680498)\n(��\u0016V�!�\u001dr*�\u0005�^�,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000\u0000XnG��b/�\u0003\u0000\u0000b,0.002074688796680498)\n(�I,\u000fd1����-������5�q���\u0018\u0016XH��k�L�K�m9,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000uWnG`J�P�\u0000\u0000\u0000�\u0000\u0000\u0000\u0012\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000rWnG�\u0019v�\u0017\u0002\u0000\u0000+\u0004\u0000\u0000\u0012\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(�\u0019��,0.002074688796680498)\n(:��M\u001d�i\u0003�M��`,���iA53�o��\u0011�j�F/��\u000f�/�\u0005:\u0000���\u001d\u0006��x]�.�|]__�\u000fO��Us��\b��\u000fPK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000yWnG�u\u0001�;\u0001\u0000\u00002\u0002\u0000\u0000\u0011\u0000\u0000\u0000ham/8-859msg1.txt]�An\u00021,0.002074688796680498)\n(cards,0.01867219917012448)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000\u001cXnG\u001e���X\u0002\u0000\u0000x\u0005\u0000\u0000\u0010\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(��6��U\u0011H�,0.002074688796680498)\n(��Ѳ�w,��\u0012��My\b6��G|�\u0011�5��\u0011\u001b�,0.002074688796680498)\n(M�\b\u0011��#x�\u0014�Ty\u0012GF��\u0017���\u0004Gr/\u0011��g��?߱0u\b@�D\u0012,0.002074688796680498)\n(T�\u0003\u0004�\u001c��\u0017��$�9m\b\u001b\u0017�\\K\u001c1��U�^J(��,���Ý\\���\u0000���\u0015:\u000f�\u0016��ڱX�\\zv\u001d\u0016A��u,0.002074688796680498)\n(�\u0001��\u0017�,0.002074688796680498)\n(dՌ�-~��P�I\u001e���u�\u0011\u001cZpLaJ��\u001b�\u0006hȣ�,0.002074688796680498)\n(�5�\u0018w���/\u00032�\b�\u001c���Ut��\u0014��\u001f(Ob�\u001aKP,0.002074688796680498)\n(�v��/3�}e�C\u0014�ʓ�'\\�F��d��C�����<\u0014�͔���j,Q\u001d/�ZU�\u0010r�^�r>����\u000e�r���3��M��g��Oy��,0.002074688796680498)\n(�j��{;v�Wﵗ�(��\u0005����R��Ss~�2m\u0017���\u0011m��穋�>a\\=Ժk���\\9sQ�A��\u001f�\u001co\u001e)��\u001d����s˞�_h\u0002���\u0006\u001f\"���\u0018\u001a�\u001f6\u0018~m����n�S`5(�YS��P��{\\���/��\b,0.002074688796680498)\n(}��\u001e�y��\u0012]m͗�mj�\b�(\u0013�g��u���෠�Z���<h�\u001cۏ\u0012_�K�.��)l>�\u001c\u0014W\u001a��\u001f��,0.002074688796680498)\n(\u0000\u0000\u0000��*\u0000spam/spmsga86.txt,0.002074688796680498)\n(���>Ȭ\u0014�x�|X��P/���b\u0005��,0.002074688796680498)\n(YԜ)A�\u0001\u000e�����c�]�%��\u0007\u0007�\bĻ�Op��\u0019�G��&gWy��)\u0011~]�,\u0004U\u0013��=r,0.002074688796680498)\n(�WD��y��6�|�7��ͳ��}o\u001a���C��\b\u0012g�v�O��@U�B\u001f�ca���͹[�v�[9�$bM��W�\u001b�\\7v\u0005H\u0004�&�Z\u001a�~�ٻ�\u0011�\"�#~4��\u0011�ZI�pB@\"~�÷���\u0007(��\u0016��w$�8��$\u0006�:�5s,0.002074688796680498)\n(a[I�S��zј���,0.002074688796680498)\n(\u0000\u0000\u00009b\u0015\u0000ham/9-109msg1.txt,0.002074688796680498)\n(��\u0015�^ZX�}\u0001��\u0003\u0004A���z\u0005h\u0006\u000f�wp�3$A�68����\u0004B�����R|�\u0004<Ԫ�#��,0.002074688796680498)\n(\u0018�)\u0007\u0002��G%�<�\u001fR=X,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u00000XnG��L�.\u0001\u0000\u0000u\u0002\u0000\u0000\u0011\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(ޜ�`['��|,2�7�_���es�si�\"�,0.002074688796680498)\n(%$(qJ��\u001d�=�,Yc{f2y/�/u6�M�\u0016����c�,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000\u001bXnGP�L�\u0019\u0004\u0000\u0000!\b\u0000\u0000\u0011\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(floor,0.01037344398340249)\n(O�4A�^\u0014��$\u0014��,0.002074688796680498)\n(ii,0.008298755186721992)\n(x���o�;lj�8`CҼM��1\u0016�%�,\u0016Z�-�<a4�I��\u0003<o�~\u0001�^\u0007��,0.002074688796680498)\n(\u0000\u0000\u0000�\u00040\u0000spam/spmsgc85.txt,0.002074688796680498)\n(\u0016�j�\u0003=,0.002074688796680498)\n(2MB��m�v+Ll�\u0000��R����\u001d55�!�\u001dt\u0016(�L\\��3����f���\u0005��ZJM\u0011�]G�\u0010��<�˨AH\u000f�>P,0.002074688796680498)\n(��R��\u0004$ڬsX,)��%�4�\u0004K�!S.�$h�\u0016Ɇ{�cJ�<���,0.002074688796680498)\n(F٨T\u0011�\u0011�TN-�=F��9dQ�֍)k\u0017N\u0001�\u0000�k�!N<���L�*-�\u0011j���\u0007u�o\u0001�RgM'��C��ڭx��@O�t,0.002074688796680498)\n(��4@�1a�+L[R�\u0000�}�N\u001d6\u00141ԗP\u001e�P�a�ZJ��\u0010��\u000e�\u0003`S�\u00149;�5\u001d5y����B��/��\u000e�#\u0013ʃ�XC���,]ق:(��\u0018�,0.002074688796680498)\n(�݄�J_��o�d����l�1;�\u001f,\\\u001dh[\u0003���I\u0000��bӪ~Β2�+P�9��\u0001��,W\u000f53��\b����a������R�\u0007�,0.002074688796680498)\n(�%\u0015.E�;�m=#�M�LL8H\u001e`L@�{#�[ӻ�V\u0019/�_%�\u000fC��L������t\\�e��!7[��rN�V���k�΂\u001b�P\u0011{>%�\u001b\u0004�7\bϠ�V��\u0011֦\u0006��7�\u000e�\u0013�r\u000fC�øܥObQ�m�A>��]\u0000�7U�e�萔E���H�����]P�ՅӔ\u000edNE~���m��\u000e�|$\u0001�3�*��Ǧ��1���7\u0004\u001dK�;����\u0018\u000fMc�?S�L���\u0004��8e�����,W��HC{\u0000\u0019�ɿ����\u0013�\u0010,0.002074688796680498)\n(VϮg��\u001d�!\u001e��`1>a����Er�T�cQ78[[U�[�e�C�@՘\u0010s���Q��@�g#'&�\u001cb\u000f��P���g�&�S���G#��C�sU�q�I��\u0012�:S�\u0000��\u0016�\\JE,0.002074688796680498)\n(��+p�%vROg����\u0017P\",1&,0.002074688796680498)\n(݁��,0.002074688796680498)\n(\u0010�\u0019:��B,0.002074688796680498)\n(calgary,0.002074688796680498)\n(�[�]�����痚��1��Z\u0019N\u001f�,0.002074688796680498)\n(b\\!Ա�Q|��!�\u0010\u0002�s�΀��,0.002074688796680498)\n(\u0017�'�|1���R̐�R8�\u0011��j\u001b-Z��ж$w������uEk'\u0014{�IcS.�|W�8��\\A�.xe,0.002074688796680498)\n(C]G��\u0007���\u001e9��,,0.002074688796680498)\n(�w�+0\u0015�9oe�a1\u0019\u001c�AEH����{\"Q��M;���\u0017�h�/C,0.002074688796680498)\n(renown,0.002074688796680498)\n(�L\u0012s\u0001Ư�t�\u0006�eQ�0I_O��\u001f�9��OB\u001bi}+\u001e��/�^,0.002074688796680498)\n(+��-V*\u001f�ͱn��!H�\"P%<�,0.002074688796680498)\n(�*\u0016qԭ�ӓ,���Ҕ��\u0007�@I\u000e*����ޢ\u0005����,0.002074688796680498)\n(4pm,0.002074688796680498)\n(�Gԅ\u0003L��0$T�䆛�V0@�:q�c�2��'�����ŵ��!�y����+�xu3�\u0001,0.002074688796680498)\n(O��jlO��\u0013�녑�\u001fPK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000lWnGs�},0.002074688796680498)\n(VZ���\u0011\u0006U0���\u001d���n�:,0.002074688796680498)\n(placing,0.004149377593360996)\n(�\u001c���zp��N�%\u0017��$gN���q�*Y��R�\u0019�4�g32y\u0010\u000f%�9,0.002074688796680498)\n(��\u001e����|)d�&�f\u001f,\u000fe�|UI*c$$�:��)dOY�������Ws\u001e'\\�{�\u0013CB\u001a,0.002074688796680498)\n(�c�\u0012|�\u0003\u0014�\u000f�\u001fF��y�,0.002074688796680498)\n(dislike,0.016597510373443983)\n(\u0000ham/6-420msg3.txt,0.002074688796680498)\n(�\u0007^[m'쁔G,0.002074688796680498)\n(s���,0.002074688796680498)\n(G�F5��p�P����,0.002074688796680498)\n(C�=�\u000f\u0000H,0.002074688796680498)\n(��)\b�$\u0005\u0002�y|8\u0001,0.002074688796680498)\n(\u0000\u0000\u00007�*\u0000spam/spmsga81.txt,0.002074688796680498)\n(\"�xu^��}\u0018�>7\u0007���7�K����,0.002074688796680498)\n(/�c��P�`$�C\u001d�\u001f��,0.002074688796680498)\n(�1��+ֲ,�y,0.002074688796680498)\n(\u0003b��B+�u�\u0005\u0006�+Q\u0001�����\u001b�Sb��2j\u001b�FY7~\u0000����\u0003��ħ���B�\\o\u001b�,0.002074688796680498)\n(q�B\u0011T`v'`�ڑmD�I\u0003�~����a�\u001b�\u001e\u0014C�R,0.002074688796680498)\n(�,E\u0006���\b��Kq\u0012�1��\u0007W/C�\u0011��E��i�w��ߣ\u001cc�Gw,0.002074688796680498)\n(�Tht�+<�/�18����bnQ����A���\u0016�iZ;\u0015�2�L?V��wQc\\�������>��-�Pl,0.002074688796680498)\n(�s�\u0003V�\u001e������)@�Dڧ\u0010K��y�\u0012\u00118,0.002074688796680498)\n(�U\u0019�11*f�\"ÿ�tu\u0003�w�7����vu��\\c}6��\\��ޜ�\u0006PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000HWnGm\u0003z��\u0000\u0000\u0000\u0016\u0001\u0000\u0000\u0011\u0000\u0000\u0000ham/3-390msg0.txt5�AN�0,0.002074688796680498)\n(biscuits,0.002074688796680498)\n(Hx�BR�g�\u0019�\u0019�]�Z,0.002074688796680498)\n(fU\u0014I���?�ww\b\u0011#��\b�pj#|�,0.002074688796680498)\n(\u0012�S��4\u001a�TF��Pe��\u0013o���g��+��,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000S�̺\u001e�\u0001Ù�$j,0.002074688796680498)\n(arlanda,0.002074688796680498)\n(�\u0001��R$j,0.002074688796680498)\n(factor,0.01037344398340249)\n(customers,0.004149377593360996)\n(��x\u000e�͡A����ڴd�q\u00058����핾S�8pUTR�Qw�\u0000��m�C���$���\u001bPK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000,0.002074688796680498)\n(willl,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000\u0004XnG�J<u�\u0002\u0000\u0000\u0018\u0007\u0000\u0000\u0012\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(#o���}�G����\u0014E�Qr�X��\u0004؜����\u0013,���G��yM,0.002074688796680498)\n(ǕB�\"����MgέN�\u0000��u����\u0005�.Ar\u0005\u0012V\u0011�k>Qt[��@�f�,]��zj\u0015�I�`\u001c�,0.002074688796680498)\n(�Ou6e,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000x[��\u001e�\u0001:�A%j,0.002074688796680498)\n(12919,0.002074688796680498)\n(sue,0.008298755186721992)\n(X3�W�\u0000,0.002074688796680498)\n(\u0018�\u0011�Y\u001f,0.002074688796680498)\n(I){/\u000en�y����,0.002074688796680498)\n(XnG%LQ\b�\u0002\u0000\u0000�\u0005\u0000\u0000\u0012\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(12828,0.002074688796680498)\n(~�&T��D��\u0017��I<�R|\u0007�\u0006�J�]Ïu��:&u�էI�Zq\u001bܞ��f,0.002074688796680498)\n(�0�\u0007�S5Þ\u0012=\u000e�\u0016�\u0003�q�\u0004�N8�O\u0016;>NAVN\u0015Dx�\u0004�f�����d����$�H��9��d��Ś��\\\u0007�&;����J�P��\u0012\u0005\u0010t\"�ʶ\u0004\u0003\u000fd�=5�,0.002074688796680498)\n(M/�\u0003\u0017mR��%�����vM�\b1O9�p0`|�Oc���Ҥ�k��N�(�K�^{M�\b%d���\u0017�E�̖�\u0016�\u0011\u0004\u001aF*�Y�$��,0.002074688796680498)\n(\u0010�*Q�7\u0007%@\u0018�+�\u0002ު�\u001dd5��\u0019=�\u0011c&�p�u��\u0019�\u000e�\bc�I,0.002074688796680498)\n(_h�Hbq�\u0016�Բ\u0017�`��)�b�6PDv,0.002074688796680498)\n(��&\u0003�K�}R2�z��#�O�2j\u001f�.1���\u0019,0.002074688796680498)\n(\u0003\u0019/��\u001d\u0010\u0019N&W/-\u0014K\u001e��\u0001PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000+XnG���\\`\u0007\u0000\u0000�\u0011\u0000\u0000\u0011\u0000\u0000\u0000spam/spmsga70.txt�XY��0\u0010��\u0014��b�2&lC�\u001f�\u0003'Pd9\u0016�-�%Ɯ��-ۊ���R��ZZ��~ݚo��]�x/�:D\u0011\\\u0013G���ߟ?y�u�.Z�>D�T4�ǔu��D��Ϗ���,0.002074688796680498)\n(�k^�]\u000f\u0013r,0.002074688796680498)\n(��f�K]�6���-�ߨ���,�\u001c�w�WdE�i��\u0013�,0.002074688796680498)\n(���\u001bZ�۶Y��\u0015}!/����U\u0000>s\u0003\u0011B3��\u0000�,0.002074688796680498)\n(��Pg`ѶDQ�~��ۣ���27��h��\u001d�udw�,0.002074688796680498)\n(6S��i,0.002074688796680498)\n(,g٤݇m릎�\u0018-�D\u000f���b����{9�vB�$�l�IS,0.002074688796680498)\n(ϻ�5o�.n�\u0006a�PiNH.�\u0011�P��OZ<�`�+�87H�,0.002074688796680498)\n(\u0000\u0000\u0000p4/\u0000spam/spmsgc21.txt,0.002074688796680498)\n(\u0000j��s��E�c}_T����U�JҀJK\u0012Vv{�kH��'�\u0010ʻ\u0010.����~���z����'��/(2�3\u001f�C,0.002074688796680498)\n(ou:�\u001a\u0002��΃D��_�fF�𕥞\u001d��\u0016�׽6��l�\u001a�Tw����\u000ef^�\"�\\\u001bͲ��X{���QE�w,0.002074688796680498)\n(990,0.014522821576763486)\n(�Q��DV��\u0011�\u0007C\u0006��>?�^'�$\u000eR4n�Z����s�>��\u0006sk\u0000nHS-��t|���\u0007,0.002074688796680498)\n(\u000e+\u0010���N\u0004��õ�[U�g����vv\u001c���\b\u0005|u\u0001�����;\u0014�*�\u0012����Ac\u0003[t���R�\u0018m\u0007�_^�c�,���&\u0019�-t�Ns\u001a\u0012�]Q�Κ��wyX�����|�̢��\u0018u\u0000��y����\u0004\u0013ko\u0017k\u0005,0.002074688796680498)\n(��\u00119,0.002074688796680498)\n(mժVv>R.�S\u0013����ì\u0007�sb�\u001e>F\u000f,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000/XnG��2ř\u0000\u0000\u0000(\u0001\u0000\u0000\u0011\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(��1\u0014ߊ�L\u0001_�%\u000eR�\u001d�1�/\u001az���\"l���y:z�Q�r?s\u0006��s�\u001e͝[\"�:t&D���s��|%��|!�-2�~>��\u000e�,0.002074688796680498)\n(;\u001f],0.002074688796680498)\n(.�<�T���2ȳl[�z�{�7,0.002074688796680498)\n(�/���)�hl��h������s,0.002074688796680498)\n(repreneur,0.002074688796680498)\n(\u0015(Z=>D�t�\u0003\u0014S�E4��:�Xj^Ib�Qi0AW�\u0017����<b{�\u0000{\u001bFk�'\\g��;P�^�o7���\u0011�\u001bl7b`{j�~\",0.002074688796680498)\n(���������ތ\u000f��.�k�`G]\u001b���\u0006�=�\u0002L=^@:�r���<A���c�/���-\u0004�F,6�\u0000\u001b{,0.002074688796680498)\n(\u001c�u��B+k\u0010��zH��RC�E��\u0014�T,�u���m\u0005��1��K�\u0002��gA�P\u001eaX,0.002074688796680498)\n(kL\u0002��t��)[��U�}A���,0.002074688796680498)\n(CPUe��5J���s\u000f�d���,0.002074688796680498)\n((�\u0010J>���o�Z\\�'ӈ\\c���U�4<�;�\u001eʈJ��\u001d4\u00193>���<�$F�0�e�\u0015��Of\u0005�\u000e�߅ТX�����7�%�\u0019M�\u001a\u0018�:�C*Å\u0015\u001a,0.002074688796680498)\n(g�Є!U.dF�\u0015(<�98&/v�;�\u0003ׂ�U�o[[�F����W�bj�CB���rU�˨\u0006k��j�>ҽw�,0.002074688796680498)\n(�/�:\u0007{,0.002074688796680498)\n(zm:g\b:y���λ����zy3�c^��(�ӡ��-+�����x|}�Ӑ��\u0018\u0016�Ucn�o���1��Q���K���\u0001|�i,0.002074688796680498)\n(�sc\u0012�1,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000]WnGG�d��\u0001\u0000\u0000w\u0003\u0000\u0000\u0011\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000+�\u000f�\u001e�\u0001�Yr,j,0.002074688796680498)\n(x�߃�ϰ%\u0002��J���q\u00006�!,0.002074688796680498)\n(�\u0018�F��7�k��pÂ߿/Xϡn�3D�a?���M\u001b��\b�I|\u0015��M+�\b�^��$��xr�\u0002����\u001c7����R$��%G/�8�ͯ�6��vŧ�,0.002074688796680498)\n(�ޡ��E�ܭ���a�Fl?oe��,0.002074688796680498)\n(�$ٰ\u001b�I�\u001a�\u0010\u0002@\u0006�F���7n�Y4�as���i�\u0014W'\u0011ҵL�^R��΍&�ײ]���pxY���w�\u0006�$\u0016�nTyFݳ\u0016֢\u0002�U���@}~�\u0011�b�0n0�K�c���!�jh0\u0002����\u0017/q,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000�vʺ\u001e�\u0001���(j,0.002074688796680498)\n(��i\u0002��=,0.002074688796680498)\n(r}�\u0017\"���,��qX�?���&��\u0015F̪��-�����XE?��r�����OPK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000\u0017XnG��5��\u0004\u0000\u0000�,0.002074688796680498)\n(�\u0003(��A�{�޿zu���B��ճQ�4լ��m�\u0017��,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000JWnG\u000f�[�6\u0002\u0000\u0000H\u0005\u0000\u0000\u0011\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(�p���F��\u0019Gn2\u0002+C�\u0014�Q.�;\u0004?Uy\u001dt�\u0019߈pp\u001e(慆��Љ\u0005\u0017�\u001fx�;S0L\u0011�)Y69�\u0017w����_�M\u001e\u001b�t�>�|�Z�Q��\u0006K�\u0016��~���I�X�r�X�U�,0.002074688796680498)\n(\u001f���\u000fPK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000,XnG@���\u0000\u0000\u0000Y\u0001\u0000\u0000\u0011\u0000\u0000\u0000spam/spmsga84.txtu�QN�0\u0010D�s��\u001f,0.002074688796680498)\n(\u0010�M���EA���mPC\u0007\u0013�=���N��{�T��,0.002074688796680498)\n(\u0000\u0000\u0000X�\u0001\u0000ham/5-1255msg1.txt,0.002074688796680498)\n(�qQ���K\u0015��ٝʅL�g�I\u0010�V��`\u0010�ѓ���\u001c\u000fSO�n�Ge��j��M�4�K�~���|�\u001b�\u000e�-\u001a\u000f-�\"�J�xb�j��I\u000e�ߎ,0.002074688796680498)\n(\u0000\u0000H\u0018\u0000\u0000\u0012\u0000\u0000\u0000ham/6-1070msg1.txt�X�r�4\u0014}�+D^�2N,0.002074688796680498)\n(ZG9��,I�H`:Ή���5~�h\u0014�%\u0006���,0.002074688796680498)\n(�}�ͨ����\u0013�,0.002074688796680498)\n(i���\u001dz\u0002ZK�dS�V�v�9}G\u001b7}\u0004���\u0007��\u0019�?��,0.002074688796680498)\n(��o32(/a���e�=�\u000e�g=q��SkB_�\u0000G����ΘO�\u0004��C�\u0005o\u001f^�^mb��\u0011�,0.002074688796680498)\n(B��\u000e�\u001c��`������ާ��EJ\b)�>�:�`�\u00079�l���1\u0000�w��N���`�\u0013̢,0.002074688796680498)\n(�+u>�2h\u000fYL\u0014^:F�`KY�����\u0001���sco��bK%\u0006�1���&��'�\u001f��Ys��,0.002074688796680498)\n(�3\u0017\u0000\u0017/i\u0011�(y7H坁~g\u000e�ڒuI�c\u0002�X���Eb\u001c����Ƙ\u0007�|��I$�I\u0004i�Ώz��\u001a�c\u001a#s\u0018�&v�0��QV��\u0018�8��H���,0.002074688796680498)\n(�Qx\u0014��К�\u000f�1y\u000e\u0010^��G\u001eۀ�\u001c�\u001dY�'*�c7����\u001e�u�\u0012;�G��\u00017ƧpB���\u001b�\u0007_L�}3G�C����gmi�����p\u001bon}/Y)y�\u001c�F?*\u0014�|���y&7��\u0012\u0011\u0010�\u0019�\u0005|�Z\u0000\"WC�`�\u0018t��N��y�>�\u0010\u001c��o�U�`�,�CKv�,0.002074688796680498)\n([o���3�\u0002F���4���;XX�,0.002074688796680498)\n(untold,0.004149377593360996)\n(�����nPx�Y�/��\b�q�z�V륜?YD_,0.002074688796680498)\n(�\u0000�\u001c�\u00188_,0.002074688796680498)\n(q�>w-�Vh\u0001\"j�\u001e#����Lm総#�m��N�\u0002���X&),0.002074688796680498)\n(r\u001e\u001c����k�@!��Y��;�/���g�O\u0011g,0.002074688796680498)\n(7ә<�D\u0010-�(\u00173�T�-|!�m���\b\u000f��B�~���ט~�.��\u00070`�~'�..k�R�s���?���\u000f�p\u0018�feWj\u0012�k��9�\u0019/౳ޛ��]��~�=:��-�P(�$��x�m<\u0013�����J�fs��Y�\u00026)Z��,0.002074688796680498)\n(�|\"J=�z*\b?�\u001bz;e\u0004t\u001d}�lKc\u0012K�z�=޿�qڀ�\u0000\u0013��f\u0012�TȖ\u0011,0.002074688796680498)\n(�Q3�\u0000�$\u0019,0.002074688796680498)\n(�\u0001(`�*j,0.002074688796680498)\n(k\u0005Y�6\u0005;��\u0004\u0005%H�h}CF�ħ��i�EX�(�d\u0005%~\u0015M�\b3�jG�񫃋��lEԃ���\\\u0015���b�g\u000e�+�u��\u000e\\�\"w�%a����\u000eF�xd�Yxe\u0017��4L�߭K�)����m�enww���n,0.002074688796680498)\n(\u0000\u0000\u0000�2\u0007\u0000ham/6-1103msg1.txt,0.002074688796680498)\n(\u0016\u0007_�f\\V�5��@@�Z�\u00148,0.002074688796680498)\n(�Iģe,0.002074688796680498)\n(happy,0.08506224066390042)\n(z��?J�@-�@,0.002074688796680498)\n(}c\u000fk+\u0012\u0010�ʸ�*�\u0003\u0019j�I6�?�5�8��\u001d(D��,0.002074688796680498)\n(J{��[��_񣠉�\u0014ćX\u0002\u001c����,0.002074688796680498)\n(�xz�ν��,0.002074688796680498)\n(32445,0.002074688796680498)\n(6��P\b���ȡ<E����\u001e�2L��|�q\u001a�g�\u0006��ZxٲY��\"�S�+����i$}�r��+,0.002074688796680498)\n(\u001c;��wd�a1��#\\;qI�A�K\u001e/�(����\u001cL�)�,0.002074688796680498)\n(\\��\u0016�\u0013�\b�iJ�\u0002\u0007\u0010\u0013���y�a�>�-�2v\b�W��E��\u001cZ_�Iy�Q�ШQW.E0���vq��,0.002074688796680498)\n(<]�:����\u0016.\u0015Ψ�N,0.002074688796680498)\n(��)�~�\u001b`��/P�!z\u0002F�%&\u0012��\u0011�o�Q�4A�\u001f\u0006(z�\u001c��W?�ĵ7�l��\u0017�Z�Pͽ�Uj#�I�(�/lm�ӊ֜K�و/���\u0011��M�,�cO�Bu\u0011Ɖ\u0012G��%�ߦ�;�\u0007�ܭ����3;�w�F�xn���\"��P�,0.002074688796680498)\n(��;�Eѐ7�\u000fCpbK'�շP\u0005�\u00055A���m��3�,0.002074688796680498)\n(german,0.004149377593360996)\n(correspondencia,0.002074688796680498)\n(�\u0013��g�9&\u001b,�����1s\b�0$F�c�:��R�o�\bN��|�H�W\b�\u001aI^��,0.002074688796680498)\n(w<\u0017�l�Xr\u0002mw�v���4����\u0012GP���w��\u001b\u001f\u000e�dr�\u0002&ſ\u000f�\u0019:a��&�m�#\u0019��\u0015�\u0018&�z�j�3v�pb�\u001a�\\F����in�b?_�@�ߌLY���[.��f��M\u0019^���ź3���\u000eD���a(^��3\u0010bݍ��zK�\b��),0.002074688796680498)\n(q��՞2�Z\u0012\u0001��v)Ly����Ѷ0�d�U��[<U�l򐟩Nw*�\u0007+n�r�,0.002074688796680498)\n(D�(�(,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000Ma��\u001e�\u0001\u001e.�&j,0.002074688796680498)\n(�޼��ر�L\u001aL�,0.002074688796680498)\n(\u0012!�,0.002074688796680498)\n(,�\u0018�i�dV�c\u0015�>(��1�s�2�ept\u0018?\u001fŌ\u001d\u0019Ԩ^���;l�ʨ��\u0019qW&1GDr\u001c\u0019���z\u001e]�Qic�u�\u0019ޣ9,�sE\u0000jC�n�?l\u001cH��\u0016Jn�z\u0000_靲\"$��t��u�j�}�J��[�oʴn��\u0019�k��NF=n*���'qV�G�\u000fO'\u001d���ӏ��o�=\u001e�ܷ��k�>����Nw\u001f}\u0007PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000\u0019XnG�����\u0001\u0000\u00000\u0004\u0000\u0000\u0011\u0000\u0000\u0000ham/9-616msg1.txt�S�n�0,0.002074688796680498)\n(\u0000\u0000\u0000E�\u0011\u0000ham/8-1178msg1.txt,0.002074688796680498)\n(����F`Rѷ�\u0006\u0019do+Ea\\�`l�ʅ�����jM򎑆O\\\u000f\u0007<d�sv�\u0005���\u0011�,0.002074688796680498)\n(��{E�%.�xp46�\u0000�=�.�B�Y�\u00119,\u001a/v�\u0004\"�P��qpَ��:%T|\u0005�;P&ڔ�1-�;@�\u0018H�\u0005UU�I\u0013�K����#��=��k�Z?����q�\u0001�+���Z��&��\u0012b��8vW,0.002074688796680498)\n(p�����g6V�zK�lG\u0018<W��\bNK{4X�A�9/]�bBo���:�;�R�Q�������:\b_��,0.002074688796680498)\n((m\b+�{��)����,0.002074688796680498)\n(�%���u�>�\u0000P�i\u001b0�,��yr�#�٘J��\u0000'\u0014,0.002074688796680498)\n(�\u0002k,0.002074688796680498)\n(�K\\�}Ǟ��\u0006k�\u0006\u0007=(\u0010\u0006�;�\\\u0018�!{��{��s�\u001bq�M��,0.002074688796680498)\n(E�{�\u0017xD��8�\u001fa?��C(S-\u00067؊&��\u0011+��J�W\"f�P�j�\u001cf\u0015�qM�,��\u001f伱#��})b&�}���(/B՗l{%�,0.002074688796680498)\n(���\u0000?U�/��5Y-�E\u0001�c/����!u�/�7��7s\u001fQ�p\u0005�&VeZ&�|�\u001f�~�\u0011�~\u0006A��$,0.002074688796680498)\n(8,��G�\u001aM���,0.002074688796680498)\n(��\u0018���[!7S�JIs�P����\u001bd�H�k�<��)źb\u0000{\u001e$\u0019�=\u001c��`�&#w�\u0000PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u00006XnGF�\u0011\u0001p\u0001\u0000\u0000\u000e\u0004\u0000\u0000\u0011\u0000\u0000\u0000spam/spmsgc55.txt�SKn�0\u0010��\u0014�\u0005,0.002074688796680498)\n(\u0014�\u001c4�\u001dǬ�I�����Q�\u0005��,0.002074688796680498)\n(\u0000\u0000\u0000Ǘ\u0012\u0000ham/8-836msg1.txt,0.002074688796680498)\n(�*�@�w}t�\u001e�\u0001Y���,0.002074688796680498)\n(XnGN�)��\u0000\u0000\u0000�\u0001\u0000\u0000\u0012\u0000\u0000\u0000ham/9-1753msg2.txt��]N�0\u0010��{�y�7m����;p��u\u0012Sǎ�N\u0003�ó�PU�/(R�ޝ\u0019��˫V�\u0006)�+l6,0.002074688796680498)\n(��\u001d9����\u0001�B\u001b���,0.002074688796680498)\n(��\u00018*q���ھes��v�9�z�&�a�o����Xo�.����;~�g\u0019%\u000e��\u0003\u001e#h�6Ie����D,0.002074688796680498)\n(���)\u001c�n�.���V3�B\u0013�a��d\u0003�^��|��a$:��\\|�5TfSS��{\u000f����^��J�,0.002074688796680498)\n(��G�\u0001Օ#ݞ;�.��\u001eMIc�o��\u0017\u0006)�\u001b��۔��e�>�磸S\u001d5��,��\u001d�y�-ڦ�5,0.002074688796680498)\n(�*[�\u001e\u000e�އ\u0011�G�n\u0001�A�\u001c�\u0015�C,0.002074688796680498)\n(->���t()�a\u001df���'9�Ƃ�u��Y/>�F��S#�Y\u0011\u001b�,���\\�C}�j\"#���\u0006�1\u001f\u0002#;,��`��5|P0ôRq��\u0019��\u0018.k�%\u0015�\u0000��%\u0011A{[��'��?�[�W�D�Dse�Y�\u0013ʱ\u001d\u0002�c��7�Ѯ�wU7�,0.002074688796680498)\n(-�\u000em��\u0007�`#olź\u0018]���笜�\u000e�t\u0018������=g�r��Նu~Qz=�\u00175��F�ި;�(M�~��X�݃�UʑtN��&wbm�F+J�\u0014��\u001c�kV�|[�e�Y\u0019�\u000e�Q6���,0.002074688796680498)\n(%�\u0011^z,0.002074688796680498)\n(904-441,0.002074688796680498)\n(�M\b\u000ea��L�B<\u0016�\u001e��)��,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000-XnG�D�v.\u0001\u0000\u0000�\u0001\u0000\u0000\u0012\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000HWnGi�\u0006&�\u0002\u0000\u0000,0.002074688796680498)\n(c�[�4*���LY3<\u0010\u001aG\u0010�F?�怲���\u0018�\u0014�����\"�0�E�E_Ǚ�3�THk,��F����|�\u001e�'f0���h(_��W�ُm_�3v��i��/\u0013�Q�����L�R)�H���L�\u001f<�S\",0.002074688796680498)\n(���y�$\u0012\u0002�,0.002074688796680498)\n(S\u0014byZ\u0019\u001d��ZzT\u0000���MC�\u0014\u0011\u0002�����B�sx�z\u0001\u0002���\u0013�6�/1�b����i�g�F�Q�X�\u0012V�D?s�\u001d4,0.002074688796680498)\n(\u0000\u0000\u0012\u0000\u0000\u0000ham/9-1014msg1.txt�Y�n�6\u0010}�W\u0010\u0001�f\u0001;M������C?��%Z�\"U^�8_�sH]�4I,0.002074688796680498)\n(9��p�e器�w/\u0017�,0.002074688796680498)\n(\u0003�\u0005������\u001fq�,0.002074688796680498)\n(tvs,0.006224066390041493)\n(\u001a��}�e\u0018v�-�Գ�Ibb�]�<ۼ����p����_,0.002074688796680498)\n(�\u0001�}�$j,0.002074688796680498)\n(/rM���E���.u#?�\u001f����L��l���N0�j��h%\u0011\u001f�%a�I,0.002074688796680498)\n(3E���\u0014\u0014�\u0004��\u000f\u0005��u�\u0015r\"�r~�S�ُ,0.002074688796680498)\n(v�l�iK�t\u0018\\�xş�~$!�&�0I�p`,<�\u0003��<\u0014:_\b�q\u0018�[H���\u0011��{Z�0Q�C��\u0002֑x���k[+�\u0017��\u0001�\u000e\u000f6�,0.002074688796680498)\n(޸!L�\u0017Ɉ���u\u001c�ƹ���J��<@\u0004z�)M�pX\"/��4�\u0005L�,0.002074688796680498)\n(dٿIG��*��|���\u001d\"�t}�*��e\u0014�vh\u000eĿ\u001f�\u001ahh\u001d��s�]\"F�}(��9u\u001b�X/��y�\u001a,0.002074688796680498)\n(sexual,0.04564315352697095)\n(P���[��\u0001��f��,0.002074688796680498)\n(businessweek,0.002074688796680498)\n(���U(Y0��vr\u0012yv*�/��\u0006���oa�UJ��uN��M]���z�(�WmοB��H^�V\u0017�μ,0.002074688796680498)\n(;�\u001c,���oR�X�SIl�x�#OL\u000fW���\u0007�r`\u0005祐<�XY��#�\u001e��D{�R'\u0013�[,0.002074688796680498)\n(F`x��Fϳ�\u0010G��\u000e�\u00040�fr�F����A�;*\u0004,0.002074688796680498)\n(�\u0017�ֆB8\u0007��\u0010\u001a�F����)�bp\u00002m,0.002074688796680498)\n(R�z�\u000f%�[��3��f�\b�z�,0.002074688796680498)\n(nd\u001f,0.002074688796680498)\n(\u0015\u001b��\u000f�,0.002074688796680498)\n(block,0.04771784232365145)\n(�0\\b��~Y��vt�1�-�-i�\"x�ڐ���і}[0w/�\u001be\u001b���8F\u001f\u001f�,(�El*�-�Q��X��\u0010u\u0017�]L�\u001e���P\u0018S�%�$\u0011O,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u00009�\u0016�\u001e�\u0001JJ�,j,0.002074688796680498)\n(<�X������[��e�g�U���r�>�KשH�\\��\u001f��\u001a�d\u0016s�M�\u001b+��.w��،�\u0004�,0.002074688796680498)\n(@ۤZ��\u001bbů]0|��z��)]�\u000f��tX-���*YK�B�ޮg�yu�w���{m���\u0015�_��W,0.002074688796680498)\n(�\u0001a��(j,0.002074688796680498)\n(��x-�d�\u001dB�\u0006�gs�_����R�\u0007`�Yz2��ʵy/�\u0015�_����\u0000���\u0006\u001f2l,0.002074688796680498)\n(�\u0006͘�\u0001\u0017�6�bH���\u00055�G���\u0005�\u001b��/�Ѽ�6��\u0004PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000]WnGF�+\u0014�\u0000\u0000\u0000�\u0000\u0000\u0000\u0012\u0000\u0000\u0000ham/6-1157msg2.txtE�ˑ�0,0.002074688796680498)\n(ϐ-4�\u00144͈�8�8\u0002�Wq�\u0017����Yy�3\u0001�;�+-��!D�x��MNb{�?�]�I��R(���Yow���\u001d�\u000eI�c�:'�8�|R�sq%��\u0018j�����\u001e\u001e�\u001e�?@Q�����`��S5�%�CCo�vT9W�Q�R!=����ƛ��G�`��]~,0.002074688796680498)\n(XnGFmUd,0.002074688796680498)\n(�Y�4񡢻\u0006�x3%�j��,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000o'ۺ\u001e�\u0001�\u0015`%j,0.002074688796680498)\n(�����EɄn2'\u0000�\u001f)ۈ%T\u0001T�'Z�D6u\u0014ؖ΋�\u0013\u0005�ڰ���J��y.�,E\u001e,0.002074688796680498)\n(�I�\u0000�\u0006�D�SF\u0002�+���T�T/D�z�9�A���.�iE��1\u0006�\u0015��$Ẑ\u001cp,0.002074688796680498)\n(\u0000\u0000\u0012\u0000\u0000\u0000ham/5-1432msg1.txt�VYr\u0013A,0.002074688796680498)\n(�\u0013\u0002��g����>,0.002074688796680498)\n(��A�beɶwX��5\u001e�n2���]?\u0019;��o�5hbT�:���>�f�1�\u0007b��5��\u000eiv\u000f�=��e�\u0002?�,0.002074688796680498)\n(�峊Hl{\u0003)�M�[AI6\u0005���<W\u0019\u0010*��~R,0.002074688796680498)\n(����ӇU��\u0015\u0019����Z�\u001c9lO,0.002074688796680498)\n(;����'V'\u001fH����u�,0.002074688796680498)\n(@\u000e뢗p�9<Q\u001c�!\"��,0.002074688796680498)\n(folife,0.002074688796680498)\n(\b!,0.002074688796680498)\n(��KOf䑋ÇA�<\u0007mo�]NH�Lw�ռL�9_��\u0014���:�M��a��dJ��4��\\���,0.002074688796680498)\n(Jt����:�qA�\u0003\bT�e��,0.002074688796680498)\n(�8A~62W\u001f6�йfu9�IE�jNf%2ܙ-\u0013f�\u0013F1'd\u000f�a5ڕ\u0005J��\\dx�a�\u001d4�kj���\u0018�L�����|��{��p�\u0015\u0017,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000hWnG�\u0002��\u0002\u0000\u0000A\u0006\u0000\u0000\u0011\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(�\u0001Ed�$j,0.002074688796680498)\n(�<d�N#i\u0013uq)+93�b\u000e��KF?���*�\b\u001e�r��5eL\u0005h$���\u0007�_����2,2Gh���v�j\"�e�\u0017}b���68>\u0018�,C�:��U�d[<!���@ꉏ5��\"�͞\\�,0.002074688796680498)\n(�[)�'#�S��}\u0000�,0.002074688796680498)\n(�\u0005��(�ޡ'XQ+�1�U���v�:i�~�\u0014wfg��\u001f�{\u0011�wdt�9rv\u0007!��X\\��P,0.002074688796680498)\n(spiers,0.002074688796680498)\n(���\u0016�+MջY��n,0.002074688796680498)\n(v1,0.002074688796680498)\n(+\u0001�*\u0016�,0.002074688796680498)\n(newsgroup,0.026970954356846474)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000�B\u0007�\u001e�\u0001z�y-j,0.002074688796680498)\n(surely,0.04771784232365145)\n(iiI\u001f�,0.002074688796680498)\n(\u001b\u0019��U%�~����w\u001fc\u0010�B�\u0006��/��͋�d1f^���V;�P��\b\u0004d�Ή\u0013���Q�ҏ��r\b��@�~\u0019\u0006=;\u000e��>\\ʷ\u0014ˈn��Q\u0016\u0000Z,0.002074688796680498)\n(�霣�9Fex���p8�Uq�\u0000�HJh�\u001dYP:��\u0013?�\u0015,�S��.Q������5\u0016|�����4��\u0016�$\u001e#�ߠB�)\u0007<���6a�,t*\u001a]�\u001daO�a���˛V�nd;['\u0002�I�Y����VЫyݫ3+�S+)�\u0006�\u0012?A�&���b���A�,0.002074688796680498)\n(�ı�Wn�j9,0.002074688796680498)\n(��̀>��\u0015gX�+j�R����#�=鳖�x�3�0�*Ǣ�#\u0007|zM�>��a�v\u0012K���]�l��8,0.002074688796680498)\n(hughes,0.002074688796680498)\n(��\u001eW��^�Sv���@�����T�4`��H\u0013gl��\u001dzc&�zԏ\u0016���#����vG,0.002074688796680498)\n(�\u0007��T�\u0018a�\u0019Bp�%0\u0002*x�s�0y�=t���w\u000f\\�Х/�r\u0010<\u0001��a\u001f\u001b�i���̴_4�\u001fi�b�A,0.002074688796680498)\n(�U�\u0005��ސKW�\u001anյQ�!$�,0.002074688796680498)\n(*\u0006Ď�n���R�\u00074ۈ(��`Wx�Ma)�gn,0.002074688796680498)\n(KlT�\u0013�\u001d95v\u0013�����X,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000�bֺ\u001e�\u0001�͜$j,0.002074688796680498)\n(26��r��>��tb�l6,���9��ٟ�\u000f\u001e;�QOS��28�Ƨ��K�W�,0.002074688796680498)\n(\u0003`*��15�\u0015�\u0007���),0.002074688796680498)\n(\u0014/:�3\u0000͈�\u0017�y��\u0002�V�B��@�p�\u0002�!�`�l����г�删O�)�,0.002074688796680498)\n(manager,0.012448132780082987)\n(p\u000f\u00121ؖ�,0.002074688796680498)\n(��L�r秒��B�\u0016�\u0011�\u0005��,0.002074688796680498)\n(6�\u0003�d,\u0005C�,0.002074688796680498)\n(E���\u001bZ,0.002074688796680498)\n(\u000f�Mس\u0004\u001d\u0012\u000f�m��\u0000������P�Q\u000f'�S�UD�^K\u000f\u001f!u�\u0005�\u0007����w)V�����%F\u001f�dq�W��]��)�_�1z\u0018�I��\u0012��}�o��2,0.002074688796680498)\n(:�h,0.002074688796680498)\n(��i�\u0012tݓ���V�H)�^�)�,0.002074688796680498)\n(}3�/\u0007�6�\u0012�\u000f�L����\u0007�d9H�,0.002074688796680498)\n(�\u0001`;�&j,0.002074688796680498)\n(%�,��\b#Q7\u001c��؋\\��mg(\u0000�]*\u0019X,0.002074688796680498)\n(X�Z,0.002074688796680498)\n(\u0000\u0000\u0000R�(\u0000spam/spmsga140.txt,0.002074688796680498)\n(w����\u000e\u0011\u0003Ӈ�ff��{,޳�\u0004yh�2�,0.002074688796680498)\n(�'m8B�x>�M�\u0014\\8\u0006g��l\\$[ËC:\u001c@��o0�V`U��\u001b5Ff�,0.002074688796680498)\n(zU�\u0007`Ѯh)�3�5xA��i2�x��q��\u0018�2�O@\u0013dc�\u0014��܃�LΠp��3(J.Z�\u001e �0\u0019�l\\a�^�\u0018\u000f�\u0010M[���r�����@���\u0007�-qY̞�:Q��(u��='\u000e�tY�Q,\u001a\u0019���\u0001�@��l{tw�I�:�,0.002074688796680498)\n(sportsbook,0.004149377593360996)\n(webb,0.002074688796680498)\n(�9�*:�(��]�\u001e�=��4�[��_�J3�K,����7D3�����=���Z���|��7�w����7���w\u0017W��\u0003ЩҁK�H�/:�#m|/�p�W,0.002074688796680498)\n(�\u001a{\u0019�#��\u001c��\u0012��k1Տ��\u0003\\,0.002074688796680498)\n(�X:���\u00172�'7D�'v������\u001dr���g�Y�K�W�W:�5\u001b/�����\u0015\u0016�F1\"Ca�B�.b���rB,0.002074688796680498)\n(\u0006�L�7>�4�o��Bļ+'�zt\u001a\b�\u001d��נ�PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000,0.002074688796680498)\n(�\u0001��B'j,0.002074688796680498)\n(r1EO��\b�\u0017\u0004���.�\u000f�r)]�\u0011\u0001�\u000e�⇷ơ���p,0.002074688796680498)\n(speeding,0.002074688796680498)\n(6\u001b\u0010+\u0001\u001b1������Z\u001c�\u0007C���,0.002074688796680498)\n(�Y�\u0012�\u0006�9\u001f*Y\u0002��x�F�6,0.002074688796680498)\n(��wF#:�ˇK��\u00156]��\u001e�r�A�*�k1h��=2��mɧ9�\u0004�EM\u0015�;rb�2S�,0.002074688796680498)\n(�R\u000e/7v�S����\u0003�\u001a*�\u001e\u001b�\u0017\u0018�~8�\u0007AR�ߑϨn��X�BL(ZK��16a�,���Ł���<��ė<#\u0019`Ά��8\"\u0004;м\u001f�8���gO\b?[8�Ȓt�as�K��5�)��)^�.w��\u001e6[,ڊR�\u0006��$�\u0007O�XηREu\u0010��R���eY��F9\u0000\b;Ĝ��cx��x���\u0011�,0.002074688796680498)\n(��4�F�K6�vB��&Ρ��)�\u0002���>���?7�f\u0015�4{�Qm��\"�\"�a,���'�N�2Y�q\u001c_�\\�\"a91H@�u�ձ_�\u0000PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000nWnGK�P�$,0.002074688796680498)\n(ɑ�\u0001�\u001f\u0010���=��SH��Q\u0001��>�R�E+f�l5�jZ!�\u0002I+BK�,0.002074688796680498)\n($\u0006��(U4�zP�}����xcY\u000e�2�XT={\u000e\u0019}͙\u0019�l��rOx�G,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000\u0000XnGh�#\u0016�\u0002\u0000\u0000�\u0005\u0000\u0000\u0012\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(3��7���1w�F�lL�^$):t��2��Nپ�d�\u0007�bSZ��GFzW���n$Yh�B�w���G�m��r�1�I�6�Қ�t����p����\u0018�X���xyߘ\u0014X�%�a�����0�\\R��b,0.002074688796680498)\n(G���WWk�\u0016L�0#0U�\u0004oפ}��H�\u001c�d�D\u0017ؗ��I\u0004\u00077����9vArO\u001e�j�\u0015k_\u0004�,0.002074688796680498)\n([�\u0015\u001f),0.002074688796680498)\n(�\u0014\u0001,0.002074688796680498)\n(\u0000\u0000\u0000��\u0007\u0000ham/6-113msg1.txt,0.002074688796680498)\n(q�\"��{�\u001f��,0.002074688796680498)\n(�W�U�gx\u000fiw��J\u000fTG�����T��Q���\u0017�'�|�',�׺U�;\u0018PU����\u000exy�&\u0016\u0001\u0011_�\u001f+�{�O�EW�X0�a�G<\u001b�,0.002074688796680498)\n(\u001f\u0000ham/9-314msg1.txt,0.002074688796680498)\n(�Rk��2XZ0ч��P\"�źٟ��&KC�UP�\u0013uxsP/\u000f�ԋë��C=�������\u00178�V\u0011��a[\"�\"�p\u001b��mxy�g�\u001d�b�\u0003���dArC�\u0013���3�3D��?�O��S������t���c\u001c\u0016'��,0.002074688796680498)\n(�2j�{��]�\u0006,0.002074688796680498)\n(�\u0001#A�(j,0.002074688796680498)\n(��y,0.002074688796680498)\n(�$.�Fh�\u00197jP\u0013l�l���=\u0004\u0007H$�a��,0.002074688796680498)\n(���ˡ\u0013\u001f���;�w��@�9<��V\u0017��b\u001c��\u0013>�s=!o\u001c\u0001ݺ3��Vo+m�T5�C��\u000f�h\u000e�'�j��,0.002074688796680498)\n(manny,0.002074688796680498)\n(���?!SIE�BzI�v��¯[�=e.��z+,0.002074688796680498)\n(rapidly,0.01037344398340249)\n(unsoliscit,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000\bXnG5p�Z6\u0003\u0000\u0000�\b\u0000\u0000\u0012\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(release,0.08506224066390042)\n(H����A�8�\u0019/�\u000ei\u001dlӼg/��t\u0019��.\\nk��{\u0004\u0001��\u0010�,0.002074688796680498)\n(E�!��\u001c�\u000eAz�_�\u001f%��Su�9\u0016\u001f0��#[��9��I��_\u0003�w\u0001\\Կw�z�D^�yR��\u0010Y\u0018\u00192�rX�.c�uȇ\u0004��_?R��%�\u001f�\u0018\u000e>V�A,\u0011,0.002074688796680498)\n(\u001e�d�q-\u0019��-\":�\u0004�;ݤ\u001c�\u0012\u0007��@\u000f7�\u000e���!@����a�\u001eݼD�T�i7�4�`Q\u00196�foڌ�\u0004d��K�M�s�cT�k@�\u0006�p��3�mxf��\"\u001a;\u0003�Fё�\u001eq�I\u001b$�Ĩ{(��i�,0.002074688796680498)\n(indiana,0.002074688796680498)\n(M,0.002074688796680498)\n(Iy�\u0007��\u0002@�\u0015{����#�]=w�i����9|p,0.002074688796680498)\n(steven,0.004149377593360996)\n(�Au�W�,0.002074688796680498)\n(A��p�ġ����\u0002iz-�]%>\u000fE\u0005�Ĝ�������F��,0.002074688796680498)\n(F񱐔j�K\u000f+�1�0\u0005�\u000f�\u0006��\u0002\u001d�\u0000,0.002074688796680498)\n(�\u0001?E,0.002074688796680498)\n(�����Gۇ���D�,0.002074688796680498)\n(\u0000ham/6-433msg1.txt,0.002074688796680498)\n(L���'�\u0005Uo,0.002074688796680498)\n(���Dv\u0002K�m�\u001cgq?[��\u0018_;529���p؂�a�\u0000����H#�4�A\u001a\bg�P3���\"\u001e�,0.002074688796680498)\n(8�#|�-�J�i�\u0015���#�Qby���~T=���@A��\u001d�\u0018���-�ӊQ�\u001f�M�o��ߩ��\b���K�͖o\u0010\u001f�:�\u0000^�\u0011\u0003K\u0005om\u0014�.�\u0001L�\u001d�8���Q�L�R�6:~x�?\u0004�#\u0016\u0002�.��p)]�zu\u000e�3)�E.�ʫ+$��9��T�~��.ԛsp\b�ś�7��8C,0.002074688796680498)\n(��E\u001a�\u0012��\u0017��!nx��hUx=c��TBZm�z\u0014%\u0007\u0012>.�ٻ_{��R-mX�g�,0.002074688796680498)\n(��B�\u0012\u0012��+/N2M�q��KK@�;g�i���\u0010��\u001eϜ���1\u0016OT�G�c�I7�G�K�IȮPu��,0.002074688796680498)\n(y1��\u0000�(,0.002074688796680498)\n(��`J�-f.�,0.002074688796680498)\n(�u�ߧ�)E{�\u001f�%~�����,0.002074688796680498)\n(d[`53��<�z����@��\u0001ƶt\u001f�������<��2J�b)��hC�D,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000\\WnGT�@�\u0002\u0000\u0000�\u0005\u0000\u0000\u0011\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(\u0014[I\u0004~Տ���ʴ�L:�#K��_���\\H�3�Hy\u0003op:�j�j��\u0018\b\u0018(�ŝ\u001cS��@y�R$�\b,0.002074688796680498)\n(�\u0002�8\u001d\u001aオdtd��\u0015�`m\u0015\u001e�k,0.002074688796680498)\n(dus,0.002074688796680498)\n(��.�X/(x���Nʕ\u00189EoL&@�՗<j�s܍�I{6F;\u000e=\"z��:�����qu�\u0005�\u0019ڞ%\\�)�A\u0004�w1�\u0016���[9a�\u0016�9���Q�\u0011�d�߷��#�F\u001e����Q#H�\"gM�\u00026�X�q��\u0007�T�m��̨�^n'��!,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000����\u001e�\u0001���$j,0.002074688796680498)\n(����\u0013f���\u0002#\u0011ԄҴF.M���\u0016D�灳Nn��ў�{�\u000f�H��u��]\u000e�k7\u0019J�ؾ���w����vRʙ^�L9\u0004`�&�,0.002074688796680498)\n(x�Ɵ]�\u0013���xȑ20٠�b��>\u0004��Q\u0013\u0010r��+-�!^\u0002�<QFDEl��\u0000�\u001e�\"}Q��inE�8W=|�P���,0.002074688796680498)\n(D�P�X��'��,0.002074688796680498)\n(111,0.004149377593360996)\n(\u0014��\u000f\u001a'�]�\u0015dM�Ս��1�-�f�kأ��dqN\u0003x��ü��讖Kd�\u0000�+#�=��.`�I��h8ݘݶ˞\u0019)U1r\u0015��\u0000\\�,0.002074688796680498)\n(601,0.002074688796680498)\n(�3�w��S�e����\u0019ҥ���\u0004���\u0000���(\u0005@̳��,0.002074688796680498)\n(home1,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000�bֺ\u001e�\u0001=\u001d�)j,0.002074688796680498)\n(��si�>\u001aH�=�\u0012\u0016,0.002074688796680498)\n(\u0000\u0000\u0000\u001f)\u0010\u0000ham/6-992msg3.txt,0.002074688796680498)\n(�����瀾�\u001d`���y�,0.002074688796680498)\n(\u000e�R��7���=�\u000f���ޞ-��5PX4�h���x���^�\u001fl��^H���HE�̾e�\u0013J����C�&\u001f/U5P�猋�):/�'��$0�&�+��ٛ�#F\u0017�/��Au�,0.002074688796680498)\n(Z�\u0016阀�b\u0014/*5�,0.002074688796680498)\n()��ʪ�`�Ն\u00021R�=(�.�k��^]q�Z+.���,0.002074688796680498)\n(�v�ۗR~-�\u001dE�3�!?����}�9�c�I��ƒ�,zʃL%\u0019y䄺z,�����{ͯ�9�B��V�2�@�,0.002074688796680498)\n(comprehensive,0.016597510373443983)\n(�ݎ���\u0017�,0.002074688796680498)\n(=i�,0.002074688796680498)\n(�T�\u0016𻵶b��\b��d�,0.002074688796680498)\n(\u000e�޹�j\u000e�G�i���\u001eaW�\u0003ۺlS�,0.002074688796680498)\n(��\u0014�9���q���t�ޡ\u0017\b%�\u0016\u0013�T���N�g�\u0003)�Ϊ�NG�E\u0012��\u0003�\u001f�z�:>S�\"���NŻ���q������\u001a}8�g\u001b�\u0013�{�!�\u001c\u001be�I\u001d\u0019\u0011C˱eO��!z�aU}o.�٨����C��=�d4\b�v^r��\u0013�G���֩�����[\u001eB�z�X�78��\u0013U)�\u000eN��@_1Z�r^�%�pJ\u001d(c{?VK��m���\u0016$\u0005T�ˈ�F��\u001a\u0011�˅ÎP4h��8�G�CK�g�F��Al�uD�tR^3�>�n��3�ڤ�a�P�ll髬W�7\u001a,����^�i��o�iF\u0006xԠ\u0003�9�EŹ\u0003�`\u0018^2�C��{!�,0.002074688796680498)\n(�w����gh�S\u0000<J�X\u0011_\u00065،X�9����\\9�i,�(�H'��F�7v�,0.002074688796680498)\n(town,0.024896265560165973)\n(person,0.11825726141078838)\n(�\u0001t\u0000�(j,0.002074688796680498)\n(�t\u0013,0.002074688796680498)\n(\u0000\u0000\u0000\u001b�-\u0000spam/spmsgb68.txt,0.002074688796680498)\n(J\u0015\u0006?W��AR�:Py�yX'�+�t,,0.002074688796680498)\n(t��M�\u0003��j\u001d�-��xJ�i��M,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000����\u001e�\u00015�\u0006'j,0.002074688796680498)\n(indefinitely,0.006224066390041493)\n(2811,0.002074688796680498)\n(���\u001fk;��K\u0011LQS��پ��3?��΁\"1_t(�h�p�\u0007PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u00000XnG���^�\u0006\u0000\u0000$\u0012\u0000\u0000\u0011\u0000\u0000\u0000spam/spmsgb22.txt�Xێ�0\u0010}�+\\@,�ni�]�E�G�\u0001�I��Ա��l(_ϙ��t\u0001�H�\u0014\u0001�=��Μ��/>�2�\u0012�W�\u0015�U�\u0012���$�ݻgT\u0014�q�茴bp�(����$ވ�x�ߞ7�j-��!��z,0.002074688796680498)\n(tm�3�\"�~��4ӧ����M*\u0005R���j�т�q�\u0016�Ζ�H�R@\\l���C��Rc\u0016v��1�W\u0018׊Medc���\u001f\u000f�PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000IWnG�5�P\u0004\u0003\u0000\u0000�\u0007\u0000\u0000\u0011\u0000\u0000\u0000ham/3-411msg1.txt�UYn�0\u0010��)\u0006�I�,���\u000e��w�,0.002074688796680498)\n(T�\u001b/J.���IL�b6h��&X�Z�p���SO\u0000�O\u0019�,0.002074688796680498)\n(\u0006\u0018�F�aA���m�\u0019��\u0010�m�\u001b5�EG\u001cj6,0.002074688796680498)\n(children,0.014522821576763486)\n(�\\�l�����`@\u001a�M0�����8��FA@�%��\u001dn,0.002074688796680498)\n(.;�2\u0017\u0010�9bq6��WN�ҽķC�\u0017\u0017�s*��\u00161��~�ۡ\u0007��]_.�n�\b{��2>�1��\u0003!\u001co,0.002074688796680498)\n(\u0000\u0017Xq��\u0011���_y\u0004h\u001fNl�\u0004�ꂢ\u001a*\u001d�MӢ)E�=b��b�w��\u0003JI\u0003w�bɆ&�?g�z6���k�Y�ݣ����ln2z\u0011��Ɔ�z,H�\u0019�K��`3���R۪��`�3z\u000044s�̥\"�pDW\u0004�|�4RK,,0.002074688796680498)\n(�\u0016�\u000en\u0001xV��F���J�P�2;\u0014\u0019��)2�k//m{�A���K����v��w\u001b\u0005�\u001e�\u00147\u001fu��^in\u0005�\u000eT8�(��j��Y,0.002074688796680498)\n(guaranteed,0.05394190871369295)\n(����J2j�cu�bq��\u0015���yf����FbK\u000e=�.�\u0011_��;�:(�64>�b�/�?��(�B��~F��\\c��\u0016`;I�\u0018�\u0004������/���\u0003��\u0010��rD���N6�\u0014>�EoK9���]ق�\u0001�\u0007\u0018�w7�՗\u0006D��\u001b�'�5M���\u0001N��\u0017������1pЏ������/\u0012��o�ڼ�~���\u0017%�,�\u0003\u001e\u0017]����r[׺1��9uc����e9�\u0002\u0016��\u0012]e��,0.002074688796680498)\n(�\u0001{=�,j,0.002074688796680498)\n(��\u001a��iZ�\u0012��Z�]�|�\u001f@\u001f:�\u0002�����,.墥\u0016���S���:�\u001bC�K䘽K۪,0.002074688796680498)\n(�\u0015M@�),0.002074688796680498)\n(�6�\u001aH�$�A-�W﮽��!\u0002����M�\u0003)\u000f�\u0011�E�i���\\ʹԉ��Y�\u0006�;�=�=\u0011[\u0005�r�B?�x�.1\u0007�.\u0019.���\u0011EΥ�\u0007�\u001djN\u0003A\u0012�\u001c��L�r�A,0.002074688796680498)\n(�\u0005�%��͗Gj���-��ݍ�|���Dǯ8���,0.002074688796680498)\n(b>\u0005�O\u0013\u0007�\u001b�m��z�U����ٔv�U,0.002074688796680498)\n(Ei\u0013Ux4�3���\u001eA�؊��,0.002074688796680498)\n(�w���(i�|�\u0016�I��|�4\u0005r\u001a']!��`%\u0016[Z�4��\u0011*[R\u001f�\u0012���\u0013*��/�\u001f\u0018��QS���#5m�\u0001�\u000f��\\.��\u0012�N��^�=�:��j��\u0015��*�͢\u00187����Ҕ>|\u0018\u0007tz,0.002074688796680498)\n(��>�d��\\���G�,0.002074688796680498)\n(�ÿ\u0014��CL�a'���\\�\u0019�H�,8A�,0.002074688796680498)\n(&\u000f:���#�V�cr!\"�\u0017k{���_��\u0007\u0014�GO��H2��,0.002074688796680498)\n(\u001c�K*�\u0012��#š�n�Z[j���9��=3��@�f,�sx-�/�,0.002074688796680498)\n(l�W֕fM�c���\u0007��<t�{mc�%C*&�\u0010�|j9�\u000er�����\u0007`�\u0005g����_�Ռ�n��̻�Ɔ_���f��b4�,0.002074688796680498)\n(94114,0.002074688796680498)\n(��H\u0006�u�&T���\u0013�!�%�\u0014�e���B\u0002ĀO\u0011:\u0004�h�1�-p�=����z��Al/[:����vQ�#w��\u00004s��*�́��\u000f�Q�/�;e\u0003Qz��v�J�(\u0010D[?U���Wd�,0.002074688796680498)\n(\u0010\u0000\u0005I\u001e��\u0010��:7b�@�!ۂ�na�jAiF�V�,0.002074688796680498)\n(�?�ǽ_PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000,0.002074688796680498)\n(6\u0001��@,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000r�ƺ\u001e�\u0001ӡ\u0011%j,0.002074688796680498)\n(\u0000\u0000\u0000j\u0002\u0010\u0000ham/6-989msg1.txt,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000#XnG�|���,0.002074688796680498)\n(�$��)x�A&��4���Mq\u001a����lR�˄\u0000\u0010\u0002@\u0019��&SR⤠�^r��1\u001d�\u0018<Yg\u0006�T&��n��V�=\u0007\u0000\\o��hs�c(�r1�\u0002�.Lc�UVh\br�P��3�s���d�'$��1�\u0005��*�{���K�0\u0011A\u0017�nFL\u0001\u0003�ŉ�<��W?\u0010Qb��,0.002074688796680498)\n(�o\u0001ț,0.002074688796680498)\n([�,��oN��ߣ���jg�\u0016̙z������M���\u0004��pD,0.002074688796680498)\n(�KRտ\u0014�с�x\u0016q���,0.002074688796680498)\n(�\u001f���\u0005X�Q�o���}ެ�[�-*��fk�n\u0007mY�@�q\u001by\b�-�}�3q��t�Q����@��s6�W�.����{��i�HC���Q��\u001f��4��q�t��J>0O�,0.002074688796680498)\n(�3��`R\u0011Y\u0019�EY'I�X��n0�-��9�\u0001[�'A)�.\u001f�W��\u001cQ\b]=������ޘ,0.002074688796680498)\n(�Fwt\u0001t,0.002074688796680498)\n(��d\u001d`1\u0014�����'�/��'\u0015៰�lwH\"�R륡��\u000f,\u0007F�\u001c#*e,0.002074688796680498)\n(��+{f��\u0005\u000e,0.002074688796680498)\n(���f�\\�1t\u001a\u0013\u0013\u0015��~\bT&�ה+��\u0015�\u0001�S@x�\u0010�4����Y���,0.002074688796680498)\n(�\u001c%�uԫ\u0004؆\u001e��,N;�e�>Lv��[�ٷb�,0.002074688796680498)\n(�k��\u0018GN\u001b\u0018�<,0.002074688796680498)\n(\u001eA?@\u0013]�=\u0006s�F>\u0019�n�N�aDYl,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000oWnG�(�~�\u0005\u0000\u0000\u0013\u000f\u0000\u0000\u0011\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(��)4�K\u00147��4i&씧���N�=\"&���h�fu�k>V��>�X\u001d������\u0000�\u0002\u001c����w_R�V%%`��g���0T,0.002074688796680498)\n(�cx\"\u0000��\u0004���\u0002Ӝ����4�&�@mؗ���\u001c��-�\u001db�����\u0019(Z]P��\u0000D��\b�\u0011D���X�!�9b\bg�i��¾,0.002074688796680498)\n(1223,0.002074688796680498)\n(Z\u0003<��\u0014��y��aG�\u0014t�_�E�kA���+�<��Yo��\u0000���4���!Ǝ\u0000I�4�,0.002074688796680498)\n(ҍ��Y\u00112t�\u001b�=ڌD��R���\u001e�\b�zW�\u00043\u0015n\u001c~1b�V��}�\"\u0018\u000e��\u0003A=B�TlXHɅbюQ\u0015\u0014\u0005\u0014�Qw`-3Gd�k\u0003uB܎�[o�BB�����\u001a�\u0014ڗ��\b�oH\u0003�,�Î�����KK��\u0002!�\u0003�G\b,0.002074688796680498)\n(L�$�����\u0010MrD��\u0003�Kk@!PA���L�,!|��Z��Z\u0006)�s\u0018�\u0012\u0018��04A\u0015�\u0013�%���K7��8�~s����9����\u0003�@,��،�,OC�fԖ&�����W�\u001fv��k��H6����d�,0.002074688796680498)\n(��\u0018uCxp�]\u001a\u0007x\u0005��xTp�\u0019\u0010�Sº�HUt\u0004�|�A!eq%'�v\u0000���\u001d\u0003e\u001f��[�\u0011����\u0004�;%\u0001�\u001a�\u0011����,0.002074688796680498)\n(L�`�E-WK�HV��X�5\u0017,0.002074688796680498)\n(intense,0.002074688796680498)\n(֞�П\u001b��n`P,�6Pɬ�U'\u001c\u0011��\u0018a�ڑ0\u0019�ϣ��\u0000,0.002074688796680498)\n(����8�>�{�Ry�,0.002074688796680498)\n(�\u0013޺\u000f\u0016�7��\u0002�3]`�V��a�x�\\*�-\u001foq\u0006�\u001e,0.002074688796680498)\n(�Ԉ@�n0,0.002074688796680498)\n(T����A��cc<'�\u0016\u0000(h�p\u000f��,0.002074688796680498)\n(\u0007jjb[K/�W�k(~�ҟD\u001fZq\u0012���\u001b٫�ŋ�ʋ�l���,0.002074688796680498)\n(�������>d۞�~��\u0007�\u001d�#\u0013«�;c{�~�Tm˱F{�\u001dq�J�H'P͆䈸�ȭ\u0007ZXRh$���톪�a,0.002074688796680498)\n(d\b\u0003��J��/\u0016'�,0.002074688796680498)\n(cyberfold,0.002074688796680498)\n(\u0012}�RŖ�bM�>�ͨ\u001d��Y�<GV\u0013޹ӊ�9����Z�\u0017�\u0002�7��BK\u0018��ki��e�m��9V�\u0007��|�=u�2=��&�\u001fLE�D\"ؖ�Y%9:�،�i��n��I������\u001f�ӎJf+&ȅ�\u0017\u000e�\u0013�7\u001aU^�H�8\u001a\u0005��&:�R聞\u001bR�b�b!�s�\u0005���%[\u0013�\u0019@��h,0.002074688796680498)\n(ev,0.002074688796680498)\n(��\u0015(]\u001c/RU��S~E^\u0000�,0.002074688796680498)\n(�nF�'��I_�xZiݕ�����,0.002074688796680498)\n(�\u0005\u0010�\u0003��kT���\u0018RY��\u0005�ro\u0005�x��n�~���L�֭EW\\������\u0011\u0001\u0006b!S����e�%�!ښChm��m\u0007,0.002074688796680498)\n(�j\u0016e�Y����]�<`��ʔ2\u0017-'�t\bi\u000e�,0.002074688796680498)\n(4��r&���\u000f����\u0016��,0.002074688796680498)\n(l\u0005�d�R$aX��\b�k�\u0005踾569�����M�0S��\u00148p�H�������\u0013�\u001a�l�Qc\u001e\"|+�#�1ֺ��n��u'Ӣ�,~%u���d/�,0.002074688796680498)\n(���b\u0018Y0\u001a`�u�d|��2+�5�<-mv��>�d�X�,0.002074688796680498)\n(���\u0000\u0000\u0000�\u0000\u0000\u0000\u0012\u0000\u0000\u0000ham/6-1037msg2.txt=��n�0,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000\u0002XnG�\u0016\u001f'R\u0007\u0000\u0000�\u0010\u0000\u0000\u0012\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n($�<X��C\u0007k6�\u0015�A\b\"\u0017�\u0003I��\u001f�v�\u0012\u0014�pt���\u001c���\u000e՜�,0.002074688796680498)\n(�H���?�o��~(�FdvF,0.002074688796680498)\n(���j���\u0011�N�[:���\u000f�u�+�-.f�^\u001d�c��D\u000f\u0012�2C�\u0013PC�,0.002074688796680498)\n(\u0010\u0002zy��ų���\u0014�\u001c����\u001eY.�.&Cfn-�\bS~P0�^\u0000-�MY��)����!��h�YfvY���\u001c��=��=B�]����,I�\u00127�H\u0016g�S�4\u0019[��ӀX\u0019��^ո�<Y���X��>����m+Ki\u0001��\u0000���|'^�=?\u000f�[U�rÝ�\u000fI!>,0.002074688796680498)\n(�+�,�\u0015�Lw,0.002074688796680498)\n([z�;���\u000eHnٙ��\u001e*���O>�M(>x�[TӒM��;����_٨4�MI,0.002074688796680498)\n(X��V�.0f�]�p͆�\u000f�52/�;�V��n��DZ0�*�)߯�璑�KFd�D�P1�\\6�Z`�\u0013{�$\u0010(\u0016�M��,0.002074688796680498)\n(�㙴D�3�0�\u0016[q\u001dS���x?��\u0011r�1��J�^���&il�7,0.002074688796680498)\n(\u0000\u0000\u0003\u001d\u0000\u0000\u0011\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(\u0001ZUO�GE�ǹ@�c�\u0002�\u001e\u001e>�Y����+,0.002074688796680498)\n(m`*����:F��,0.002074688796680498)\n(����\bC�����>d{2Bh�>��<���t#,0.002074688796680498)\n(�O\u0014譪\u000e��\"X�L*bxIZ�0��\u00160[iı���\u0002vk�uH/\"�\u0018�,\u0001�5�2gþʺa.lZ&�,0.002074688796680498)\n(��ì��\u001e�\u001d�L�\u0003�x�~\u0010\u0003\u000f��+#��F�\bq\u0005�v)����\u001bǑ6˵Q]�jX�JaT�c\u001b\u0003�\u0005`\u0003?k���\u001fPK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000tWnG^,0.002074688796680498)\n(��gW\u001a����A~I�?߁<F�,0.002074688796680498)\n(XnG�\u0012դ�\u0001\u0000\u0000�\u0003\u0000\u0000\u0012\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(ڙ\u0011�x��\u0019Eң��Y�.�%��~b7j2w�h-�H�zLk�r\u0006Mٍt�\u0005PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000]WnG��W4\u0001\u0000\u0000\b\u0002\u0000\u0000\u0012\u0000\u0000\u0000ham/6-1146msg2.txte�AR�0,0.002074688796680498)\n(d\"\u0017\u0017S?s\u001f�wّSw���i�?\b�r�\u0007�*�_=�4�\b\u0003�'��,0.002074688796680498)\n(r0lgodlhiam7anx,0.002074688796680498)\n(ct,0.016597510373443983)\n(motivate,0.006224066390041493)\n(p\u0007~k�:�J+,0.002074688796680498)\n(m\u0018ى�Y�n\u0007V�G�MᚍG�؈\u001eΡ���<5��ғ����G�E�]K^,0.002074688796680498)\n(fax,0.14107883817427386)\n(Q\u001cnN�a8rq�\u0007�Y�h�[m8��'w���ͺ�\u0004Q�˽\u000e\u0005\u0018=[V,0.002074688796680498)\n(��\u0014�u�8�e�qV�CO\u0000S�Ą\u001f\u0005$m��\u001d�\u0013�M޳L\u0001�o\u0006�?e�*&�\u0010�\u0010K0�%d�s����\u001a���A4�t�y!�$�f$Nɦ�pv2e��l���0�O�8���\\�g2x�ApQ�E�d�L.�.\u0006Z��{�*�U>F}#Ij��\u0012:�4b^�DB=\u0014�\u001eO�SF��m�,0.002074688796680498)\n(K\u000fE��8��g˫\u0017�+`��bi|\u0002\u001d5ؤ\u0001|�߀,0.002074688796680498)\n(�\u0007ɝ�,0.002074688796680498)\n(\u001fm������s5���\"�q+!�ծ���\u000e���8�A,0.002074688796680498)\n(�\u0014�|#W\u0001��;�r\u0016<\u0001�3�pv�\u0015*�G)�\b�\u0000R��K��\u001c\u0017`6\\�F7M�\u0014F�p,0.002074688796680498)\n(W����\u001bU�g�R�,0.002074688796680498)\n(���a_�ȬM_$C\u0017{���HN�\u0016\u0018P`\u000f\u0016�#�:$��S+&>��͠q\u001e{jx\u001c\u0017bk]�FhL�^,0.002074688796680498)\n(441-6481,0.002074688796680498)\n(hzr4filvcyhu1ejxkypr77345jsgjkehnofo,0.002074688796680498)\n(g�)i�ZPl�xc�|�\u0018��\u0014�U��.5-�\u0016Y,0.002074688796680498)\n(P�OO�d���\u0018�5�|�U[��;�8c������?PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000'XnG,0.002074688796680498)\n(w�Wٰ\u001a��[��,0.002074688796680498)\n(�[\u0016�,0.002074688796680498)\n(��)��\u0002��\u0016�O��\u0013P+Zb�\u000f��F��;k�N~�\u0002w83���>��\u0014odBo�J\u0017����+e�KW\u000fM�e\u0013S���tڛ�Jg���I�Va#oE�U@��L��r%)���#��j��øz�hF��9�\u0006M,0.002074688796680498)\n(#�,0.002074688796680498)\n(\u000f�S�_��\u000f�,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000װ�\u001e�\u0001�3,0.002074688796680498)\n(*�q��+�|����5�W%�r7F*�g�~�|���98J�<�7s,0.002074688796680498)\n(L\u00028ު�xD�Y��S��v��+\u001b�d��,0.002074688796680498)\n(\u0000m��D\u0011�ĝ��n,0.002074688796680498)\n(6����P\b���i�\u0015t�8�J��\u0006�n���\u0016!z����6j���i\u0001�ia���\u000e�dţ_\u0014������\u001b-G��X;B3}Z,0.002074688796680498)\n(F|���J�͚c�L�?�M\u001e����V\u0003��)\u001ah:\u0000�>{\u001e[����[��3Ơ?��4��H�\u000e�~a-5�V�)AњVV���A����7��\u0002\u0006P,0.002074688796680498)\n(]��O��L<#v���\u001aJc�D\b��f�全M\u0013{q�pa�SK�WF��(I��A\u0016�\u0011d�\u000e\u001c\u000f��|�f\"\u0001��\u0007�o7��\u001a�RN�W-��\u001e�\u0016)�Q�<���!�^�ނ���~�\u0013�,0.002074688796680498)\n(�Q3�q����\u0019�*�Ҳ,0.002074688796680498)\n(�\u0001T\u0019\u0005$j,0.002074688796680498)\n(b��Wg)�E���,0.002074688796680498)\n(z�8\u000e4�T(\u000e��p�b\u001d\u0001A�D�'Z���U�}Y�,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000����\u001e�\u0001\u001eO\u0016$j,0.002074688796680498)\n(�\u00153b&��s��W\u00157\u000f\u001e�v�v�)Q�],0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000�lк\u001e�\u0001O*\")j,0.002074688796680498)\n(��0T�\u0010����0����&�8\u0004-�\u000e��F�\u0014gV�EL�\u0011�D\u000f�D��f\u0013�\u0006��\u0016ﱟ\u0012���k3���ҏ�m,0.002074688796680498)\n(\u0018���'(����.Q#��b726\u0003\u0007�4��K�\u000fdD��8��\b���ՙ�O��\u001c�P+j`���^��#Yv]�\u001b����K�����P\bX��8�.\u0017���--`��~Ѡ,0.002074688796680498)\n((nO��_0I:ɘY�,,0.002074688796680498)\n(~B��,0.002074688796680498)\n(������OtM�~���,0.002074688796680498)\n(fq\"Ð��\u0016���}�B\u001b�-�e\u001cI�1\u001c��E���ȝ��,0.002074688796680498)\n(��u����b��\u0010���/�\u001fn��\u001c\u0013\u000e���`��4\u00157��C\u0004���~��e/\u0001�\b^,0.002074688796680498)\n(vague,0.002074688796680498)\n(�%!��a�~����\u0013\bOZА\u0003Z\u001dh\b\u0003\b��z,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000u���\u001e�\u0001\u001f��%j,0.002074688796680498)\n(73�켔Q\u0012�:��-=P�X�I�j�\u0006�K\u0012�¡q�$�Q,0.002074688796680498)\n(��\u001e�\u00011��(j,0.002074688796680498)\n(0�r�3nu�ؒ¨��\u0019�NYV8����lߺ\u0014@C�Oi/,0.002074688796680498)\n(�\u0002\u0000\u0000z\u0005\u0000\u0000\u0012\u0000\u0000\u0000ham/8-1084msg2.txt}TKn�0\u0010��\u0014�K\u0002�A\u0017�@�C�\u0002\u0019�c�,0.002074688796680498)\n(��5,0.002074688796680498)\n(�sKj�X]\u0006\u0007`Զ9�4(�2Em�\u0002���9k��N�@hrh\u0014�p߆�4�`&,0.002074688796680498)\n(�8���\u0000�ɟ�o�5�9\u0012��\u0005G�\\ÕC1C>-3�8y�J�Z\u0002,0.002074688796680498)\n(��W\u0007�,zXY�Bf��&,0.002074688796680498)\n(\u0000\u0000\u0000��\u0012\u0000ham/8-828msg3.txt,0.002074688796680498)\n(����tp��R���[m�\u0016R�@0J�,0.002074688796680498)\n(�7�;�lh��'�fDz+\u0016��6��[\u0005g�+e�\u0006_0vG�����W9$8R�巆�1\u001fix\u0017Rr\u001f𡄨���X���\u0015?���x��,0.002074688796680498)\n(�V�,0.002074688796680498)\n(\u000eN5c=�@B�!�u\u001cu\u0007��R'\u000e�\u0003T��,0.002074688796680498)\n(�/\u0006B�\u0018��cn�z�:�qe>Nn��\u0005Pk��\u0010\u0018lo\u00114�QcϺO9H0\u0001���\u0011�\u0010?��PVE(�\u0010�l��4\u000f,0.002074688796680498)\n(ˆ/}a�\u0019;,0.002074688796680498)\n(���b��c]���\u001c�V\u0012�:a�\u001c��_�0�=�TN�\u001a*�>\"#��\u001a�\u00129�>�xW�FE\u0005�O\u000f�M\u0011px\u00121�\u001c�q��zw�\b�z�n�����z�;`�\u0016�`�p\u0005�Q��M�=~��/fJ�9N���*�_�թ\u0004t\u0006�ptq�m�o\\J�\u0010��\u0000,0.002074688796680498)\n(�}��e��E\u0016Ȩ���MVǇ��\u0001\u000e<Te�E�E�B���v�X�\u0016�\u001fPK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000\u001aXnG�U�&�\u0006\u0000\u0000K\u0012\u0000\u0000\u0011\u0000\u0000\u0000ham/9-621msg2.txt�WY��0\u0018~�\u0014~@�@[Z�2S,0.002074688796680498)\n(\"�1��bn��b�]�\u001b�t(]�\u0001\"\\����\u0010>sD?�^�þV�POU\u0011�Ix\\\\�5g����I���Q!��\u0013�\u0001���<��B�\u0003Rq+y�����:�D�Y���W�\u001e\u001f��o��ؐ�[�¸�\u001a�eP�[���l\u0000��Y�?Hz{�͒����\"�K\u0011����\u0011���60g�Z\u0003\u001eP\u00150���\u0014pj-����:�69�\\P�p�n�Y3#w�2�8�\u0019�(��<].��{6c,0.002074688796680498)\n(����X��(W9��s�\u0017n�L�\u0016�Ǉ=���O�\u0017�c\u001b��B�^+�\u0002�\u0000g\bxx�N��3B=�6��o0���3\u0000Bq�z���.)8x���=<>�\u001d=�<\u0011Ϻ��\u000e$�a���Р\u001eZ�������\u0016=<�x\u0006,0.002074688796680498)\n(5q�k\u000e\b��qHG�7\u0006z��9b{�Q\u0007����$�V9��H~O��F\u001fQjr��\u0001:f4?�������A�U,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000Ė��\u001e�\u0001v��'j,0.002074688796680498)\n(l�G3�:ړ�h\u0015�\u0003��\u001c�CG��\u0019|��\u001fW\u001c��¼Cꮺŷg�N�1CJ�mt[d�VI\u0003��dl�\"�@2Ս\u0012\b\u0007�.�Q$+��\u0007�%�Yb���1\u0013��\u0017?by�ኖT��'A$)M��\u0015���{��r׮v\u0011a�j�]�\u001b��o�`��\u0001�\u0003w��A�{k�.�\u0015<�.ȫ1H����5}�����'��F��,0.002074688796680498)\n(��>lSX�f���D��CQ���0r,\u001a΋9ڑ9p���iM\u000e��\u0007��s,0.002074688796680498)\n(�ƚ\u0000�؍Q�\u0013u\u001b�0u\u0003I�Vj/,�w���쀷���i����p�Y�xޠ󨺚�OB,�,0.002074688796680498)\n(:S]P!,8��\u0005p\u0003VI,\u0002�I���\u0014G�L�\u0001\u0003��5�:���z��\u001fv�\bCT��\u0001O^\u0010,0.002074688796680498)\n(��E�!T�\u0014�.mS\u0015����0A|3�\u001cb}���k��^�𕽄��r�E\u0013΄\u0006A\u0000?~T�/��,0.002074688796680498)\n(bookkeep,0.002074688796680498)\n(oz,0.002074688796680498)\n(pva,0.002074688796680498)\n(�\u0001��q'j,0.002074688796680498)\n(kindest,0.008298755186721992)\n(ri,0.004149377593360996)\n(\u0000\u0000\u0000�,\"\u0000ham/9-53msg2.txt,0.002074688796680498)\n(exchanged,0.004149377593360996)\n(��\u001a��$�H��9F�o�\u0011���S�o4Z�X\u0007ф�\u0005���~�|Vx,0.002074688796680498)\n(8�\u0001��\"���G�y'�ȣw�\u001b[\u0016\u0006����۵4KRF\u0000I=2M�08��{��{\b8��\u001c:JE0ə=\u0012�D���5�+�#0��]L9�9��#Լ�Eh^��xuݒ�9�*Ǳԩ�z��\u0012\u0013�[!Z��\u0001Ho���&�Q�,h�y�������t\u00113~���<�,0.002074688796680498)\n(�\u0011h,0.002074688796680498)\n(~�Y�,0.002074688796680498)\n(\u0015�\u0016��I\b��%h�\u0005�H�hN�\u0010ouֻ��\u0005h�h52�\u0007\u0010�\u0002;b������2�\u0019X�%6��l��m�aۚ�\u000e��v\u0012�O�9��������!�����0'\u001e|R��\u001a�w�\\�L�܉���(m\u0017��k`�pjA\u0018\u000e�\u0003��\u0011Q�Ȇ�\u001c,0.002074688796680498)\n(e��fl{�,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000�ƹ�\u001e�\u0001���#j,0.002074688796680498)\n(�I\u000e����d��Kx0�K�ɌX�\u0003\u0001\u0001�8zb�\u001d�A�\u001c�~�:Xsr'G�xJ�^\\\u0007z6��I��\u001e�}�]n�\u0005��w�\\���8'\u0012����i,0.002074688796680498)\n(sexxxybody,0.004149377593360996)\n(�C0���)=�a�w�$ǥ�\u0016'4�\\,0.002074688796680498)\n(�4ǐް�\u0011aQy�H�2��\b�S\u0001�ƚ#��\u0014�T\u0013\u00031j\u0013B,0.002074688796680498)\n(N�\u0005��%,0.002074688796680498)\n(�A\u001a����5(��,0.002074688796680498)\n(\u0007\u0018{<T*$��\u0010J\\��\u0014\u0002\u001aL~\u0015\u0014���\bk��\"�r\u0018�[�\u001c\u0001ա�T[��������c�\u0014)��,��\u0007�(C�A����\\.�����+\u0015\u0011O�`�\u0011��V\u0015>ZO\u000f\u001e�}\u0013�Z\u001abV��[�,0.002074688796680498)\n(�P]��\u0010�ڲǻ=�L,0.002074688796680498)\n(�?��u\u0004,0.002074688796680498)\n(�\u0001dQ�#j,0.002074688796680498)\n(0�(\u0018�R�}���9L֥t�]��%6��,0.002074688796680498)\n(�\u0001�\u000e�+j,0.002074688796680498)\n(\u0010\u0014���V�\u0011�ڜ��h�&2:HW\u001d+������ga;�5�˸�5�su�\u0005I���t��h���i��\u001e�B&i�6\u001ef��4�l��U�e���wPK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000\u0017XnGs�0^�,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000�1պ\u001e�\u0001P�\u001f'j,0.002074688796680498)\n(\u0000\u0000\u0000��\u001f\u0000ham/9-378msg1.txt,0.002074688796680498)\n(\u0014\u001e�\u0018��cx�,0.002074688796680498)\n(ꖄ��\u001a\bl��wZ2u��[�\u0007\u001f��\u0014�a\u0005-[�Q��J6�\u0000\u0014�Uj�=�`�t�:[p��D{�\u0003\u0007U�p�]'�\u0000��\u0019kw�fK\u0016ᲁc�f\u00198�5H9P�b]���\u0012�T:C�\u0012����\u001b��P\u0017\u0017\u001d���Z{�\u0001�HĕJב\u0005W�������ƛLΩ�/�a0t���k��\u0019�\u0010\\^����W\"��\u0018=���\u001d�>g��\u000f��\u0004\u0015y,0.002074688796680498)\n(�H؆r&F���\"\u0016���[#��a��N2~��Y�\u0003��\u0004\u0003�RAKA&\u0013\u0015,0.002074688796680498)\n(!N�\u001c$��h3ʮT\u0004�3�����󰭈��*Cؼp\u001c/���#�,0.002074688796680498)\n(��rXT��H���\u001bD\u0000,0.002074688796680498)\n(?\u0015]�xd4]ApH�U\b�\u0010ݩLc�Xl��U�����:,0.002074688796680498)\n(t1\u0014\u0004,0.002074688796680498)\n(un�~��\u0019�,0.002074688796680498)\n(��0[�z��B;_��0��0Jd\u0007��(,KX^3�Zf\b\u0002t1��\u0004,0.002074688796680498)\n(hardcopy,0.004149377593360996)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000Hn��\u001e�\u0001Ņ:(j,0.002074688796680498)\n(C\u00012\u001b\\�Dn:n}\u0004%�����5\u0005\u0006��ᣉ@���Q�Ԝ��I�\u00055\u0019�\u0013��AR1y\u0012\u001f���\u0000\u000e�u֥�\u001a��\u0017ͨ�\u001b\u0016�>\u0001\u001b�\u0003�`\u001b��`����*(��,0.002074688796680498)\n(�َ.\u001c;�cv��,0.002074688796680498)\n(SS�/�h&�\u0015�/��PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u00001XnG���=\u0012\u0004\u0000\u0000,,0.002074688796680498)\n(�kM�?����\u0013,0.002074688796680498)\n(��\u0015��\u0012�i�N�|�/�)HbB�*\u0001Z�ﻐ-9�L�饣\u0019�\u0012�\u0005�,0.002074688796680498)\n(r,\u0017_�\\M��\\\u000eMHSZ�Vں��U��ʂQm�8�1p��С�4�\u00025��;*��,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000jWnG��g�q\u0003\u0000\u0000�\u0006\u0000\u0000\u0010\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(multitude,0.004149377593360996)\n(�q��a\u001b\u0005ٶ��^���C��@�%�\u000f_���N8(i,0.002074688796680498)\n(��{\u0006\u0003\u0000\u0000�\u0006\u0000\u0000\u0012\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(�5$h\u0014\\���\u0002Ё�2,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000\u0004��\u001e�\u0001���'j,0.002074688796680498)\n(�^��|�\u001a\u001a���(IQO\u0007\u0007�c@�ʎ�zHG��ef\u001c�72\u0014X�\\Ǿ�TK��U�t�UQ6��t���\u0002�b��/��dW�v�b㮲j\u0019\u0005�����/��P��\"��\u0007�:ߡ��(�ӫ�\u0012ɤ\u001cjc�j������&S�^�.��?\u001b]��ql1~��W\u0007��\u001fn����Ż���6�В�\u0011��w?y�\u0017�����\u0017y�m�o#z2�\u001c��CE��C��\u0014w��/��,0.002074688796680498)\n(omaha,0.002074688796680498)\n(�C�g��#��Y$�n\u0001AAbp%,0.002074688796680498)\n(��)�љ�Ti�G\u001c���,0.002074688796680498)\n(\u0001{{\u0016љ�>^W�d{�y�T����e�}Ӱ�'_�s�q?4T�~���/0�@�|{��z�\u0001�\u0001�AX��v��A�e0��;w,0.002074688796680498)\n(>\u001d���Z�l\u0018N5W���\u0001���i�\u001d�����U�/3�,0.002074688796680498)\n(���f�W\u0018�v�,0.002074688796680498)\n(s�@\u001a���,x��\u001fa�W�F��I�~�~����\u000e�Ⴀr��\u001a��0�\u0007�#�\u000fA��K]8�Z\\��,ו�(|�փ��N�\u0012}��ؚL��\u00017j\u001a���X>��,0.002074688796680498)\n(revealed,0.002074688796680498)\n(f\u001c+���\u0001��ru2�\u0016��u��,���D5L=�_(p,�_s+b��f���б\u0019�3�G�m���3�\u0014��<\u0015&Gv�il-}�E�qH���\u000e��?�K��\u001b�r�xݯ���V�m�r��r�߅bߔ\u001b,0.002074688796680498)\n(��&\u0000UH\\�\u0004[f��\u0016�O\u0017\u001d�<֖,0.002074688796680498)\n(6����O��,0.002074688796680498)\n(anus,0.002074688796680498)\n(ɒ�{��?�0�+o�W\u000e��(dr,0.002074688796680498)\n(��\u001d��aK�_��D^�\u0010ӓ\u0002@=;\u0013`�P�QS\u000eZ\u001bP.�/U7l�4;Y�+Y���9y\u0010�m��,0.002074688796680498)\n(o��,0.002074688796680498)\n(��<fx4�0�l�\u0003'P;J[ı�?i��)���=f1i˶�T*�k�\u0013Ww�)�thB{\u001e|���ٟ\u0011ڑ�*���t,0.002074688796680498)\n(5�\u0002�܉}Ƌ\u001f\u0000c�=��\u0004���5�~\u0002PK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000\u0017XnGw�/�+\u0004\u0000\u0000�,0.002074688796680498)\n(|�\u0014~�g�7�\u0013P^�\u0003'P\u001c%1�m\u0005�N��Y9i)\u0007`:�q,[�]���,0.002074688796680498)\n({��t,qs�]o�e/�ul\u0000�$>�`,0.002074688796680498)\n(8401,0.002074688796680498)\n(�#����l~v��G����י�M�\u001d�J\u0018�CdN\u0006�,U�$��2:�$����+�u�k0���0�\u0010�@2�Xj0G\b�C��\u0013���$���#$��r\u0004�81'`.\u0005<�F��\u001a*�3�[�\u00181�\u001e�V�t�\u0017��w��*u6���e'TҒ�f5��\u00063\u001a�\u001bK\u0003�:�P��8�v�\b�d�Q&�\u001f�\u0006�H\u00071����,0.002074688796680498)\n(��)+�X㐰ޱ��t2E+q\u0001~\u0017�6+A��`���\u0011u��ɧ̓4'k,0.002074688796680498)\n(\u0000ham/9-451msg1.txt,0.002074688796680498)\n(7~Ɔ\b�fT��\u0013\u0010q�i�i�\u001d�J��c\u0002\u0012\u0017��Уi�D�n۹[�V\u0018�A[�d��`������R���^F1��h��9��w�\u00041�Z]\u001f�Zz�~�-����m�u\u001c\\�{��b.�Z#�G�7��H\u0002��:\u0010�ĺ�|����2r�,0.002074688796680498)\n(}�+F<�h�-\u0014\u0004+!�\u000f|��8��΍��[���IڴeY�\u001bZm��x|��cO����|�:�Z_bb�R�(�>���sd�2ޒ7%k��{�V�vdTۇW�Z2F\u0005,0.002074688796680498)\n(I+�#����?�!46�D�y��Ὄ�9\"{e��6���\u0016��섾A�\u0004����d�Y>�ߣQ)uύ��s�~,0.002074688796680498)\n(\u0013�}�XԳ�Ǚ\u0005l>䶘\u001a��\u0006\u0019�\u0017##��\u001a�O�ӗ�ڬ��j���U&��:�+;&i����4�'u@�,0.002074688796680498)\n(\u0000\u0000\u0000�'\u0000ham/9-948msg1.txt,0.002074688796680498)\n(\u0000\u0000\u0000\u0000\u0000\u0001\u0000\u0018\u0000\u0000u���\u001e�\u0001p��&j,0.002074688796680498)\n(f�dS�.ϊ,0.002074688796680498)\n(\u0019��A�2��\u0005t�Bn�'3�,0.002074688796680498)\n(�)Q9+��,0.002074688796680498)\n(DIRp\u0005iL��ʚ�\u0003�#d�\u001d���\u0018%\b��,0.002074688796680498)\n(ki\u001a�g����ˎZW\u001a�,0.002074688796680498)\n(uncle,0.004149377593360996)\n(anyplace,0.002074688796680498)\n(m,θ�\u0002/ls��3\u0004�O��}\u00075�%k~�o,0.002074688796680498)\n(���\u0016���\u0000�\u001aQ�e\u001b̠{��ʗ�Н\u0012��z%�3�e�(H~���[�,0.002074688796680498)\n(�\u001a$�����t��&\u001aP]�y��,0.002074688796680498)\n(warmly,0.004149377593360996)\n(S\u001c.T��y��&&̍�;��k�9�,0.002074688796680498)\n(�j�G�3���w\u0003\u000f��dإ��Z3���.J7l�\u0019;�H!W�\u0011���Q�C��\u0015z�n�t��H��\u0000�$\u000e\u0007�C�Zx9#��g\u0015x�6��I-z�h��Ȧu�ӦX�\u0006N\u0013�1��dA��\b�m��\u0006;�S�@0O\u001dR\u0006C�,0.002074688796680498)\n(�oxV�Y\u0003\u0000��:B��\\��[���\u0012vG\u0003��q���3\u000f\u0017�\u001c,0.002074688796680498)\n(�^`�\u0013�\u0002�cx2T��t\u0018����mf�M��ރ��b�^!�O:9\u000f���\u0013x�=�\u001a��bC\u0001\u001c���3�����᪥PA,0.002074688796680498)\n(PҤm,0.002074688796680498)\n(H��\u0015E�,0.002074688796680498)\n(136,0.006224066390041493)\n(inspire,0.004149377593360996)\n(&,0.25933609958506226)\n(��r�d���ѣ�Zq�����\u0007���\u000f7����\u0007\u0000���۷8�ʟ��;l���y�m�'\u001b���Y:0�U�\u001aG,0.002074688796680498)\n(�����Mc�]\u000e�3�����L\u001b!T�4���~�J\u001et�\u001b�>t��g\u001a\u0018���b\u0006GF?,0.002074688796680498)\n(\u000f|;g�I6U,0.002074688796680498)\n(\u0007\u0000\u0000\u0011\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(90036,0.002074688796680498)\n(�FNj6&\u0016,0.002074688796680498)\n(whitney,0.002074688796680498)\n(ZSi�Ki�n�p�֩�{#��o%��L<\u0012D�K.�*��%�\u0011�I�D�@05,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000\u0003XnGE�S�A\u0002\u0000\u0000�\u0004\u0000\u0000\u0012\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(J�U��>�F+ͦ\u0010m�nO;F�6�\u0010�I�,0.002074688796680498)\n(�b�F�Ĳ�3y\u0019�J�Xh�x����K�m��/i2,0.002074688796680498)\n(compel,0.002074688796680498)\n(�\u0015�%�����\u0007����M*\u001a�\u001e��V��\u001c�v��\u0019�5��\u0014�Xs��4M\u000e[z�yl���Mψ�T*��\"\"Ԅ,�\u0002ocr��T\u0004\u000eQ\u0004��n;(�\u001b=��q��=�,u\u0015R/C\u001a��\u001fPK\u0003\u0004\u0014\u0000\u0000\u0000\b\u0000cWnG�~\u001f\u0000�\u0005\u0000\u0000�\u0010\u0000\u0000\u0011\u0000\u0000\u0000ham/6-243msg1.txt�XY��0\u0010��\u0014*>`�J\u0000g��,0.002074688796680498)\n(�H\u0011<\\��-\u0017����G�`'Y��\bLN0\u00138aHbU�\u0013@k�$̽�`hf�:ݜE\u001f[��s�T,0.002074688796680498)\n(�\u0006\u0006!��\u0011��0j$���ر�r^Ÿ�v3�̙h�Lt\u0003,0.002074688796680498)\n(A�\u0006�mA⎃a�@\u0014Vf�!\u0019�GW�1�,0.002074688796680498)\n(���(ǂ�Kw�.�v��!�Y�N3�ى$���Ў�;�H\u0003�]�.8v\u0010\u0002\u0004�Z�y*���v������\u001ak\u000f.����v����0��&�w�/�e\u0012\u0011��s\u0012mdR��\u001b�W�nT�J��,0.002074688796680498)\n(\u0011�\u000e��%�\bS�\u0018d�+\u001c�^����a5\u0014b'?�\u0013\u001c��\u0018an2-\u0002\u0010�i�l\u001arQ�,0.002074688796680498)\n(���%��S�Q½�I�\u0018K\u0013�������e��\u0014�i~��]Iǒ�q8֗ز),0.002074688796680498)\n(D�^��\u0002/��O�P\u0010\u0005+�\u0004:\u0014�ƥ,0.002074688796680498)\n(charitable,0.002074688796680498)\n(�L�n�x1?��EZ�C�j�\u0013��BpZ�.�Ps���m�Y`v|��|\u0010o:gr,0.002074688796680498)\n(�g��J�vHٯpu��j\u0017���8/,��\u0003���\u001dQ�\bhL)%��4��$�%��d\u0018���06\u001b�T�UC\u001c\"��q�\u0012�`\u0013q�\u00070���ȨM���S$���r~^X��Y8�UD�\u001e&|\u000f;Yf�[\u000f�\u0017�\u0002떾�t)��_��.�Z�n�y\u0011�%�,0.002074688796680498)\n(tree,0.016597510373443983)\n(/��8�ظH\u0015��L\u0002n���\u0004։M�Y)N\u0003\u001dև*\u0007�\\�[\u0000gЉ\u0015�,0.002074688796680498)\n(i\u0005;�O����V���\\�\u0011#jZR�C��q�:�7�>%�Q�J�Tvq]��Z3W\u001a�y��i,0.002074688796680498)\n(0�*�o�,0.002074688796680498)\n(E�vɐws��\u0017����\u0012R��\u0014�{�*o�\u0011map*1���7�3�X>\u000el�B\u001b��\"�[\u001d��s&��z,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000zWnG;�,0.002074688796680498)\n(0�p�&�RCm\b�!��]aC9K˖M^�S�\u0004FV�\u0019X��2����w�?��������c��.9�d[�=cr)�P*��b�K�\u0012�P\u0003\u0017DJKg�{w��,0.002074688796680498)\n(P%0�nwF#o5p\"\u001c�\u001c˕�;�1,0.002074688796680498)\n(�9^[}�^\u000f�(�G\u0019b��)\u001b���W?��3(�TO�q�\u0012�c�u���rjq6���o�\u000fK\\��[�L\u0014c�*ƕ�,!��c��\u001b5��a��H\u0011\u001f�O5)����X�\u001d)H�n\u0005�<f�<����&�W4-ɓ9��o�9\"\u0007�\u001de,0.002074688796680498)\n(�\u0001��`(j,0.002074688796680498)\n(\u0015��OdT|ǜ�t����\u0004\u0018|�X�\u0001�.�I9�����\u0006c�arTJA�W\u001e��<�v��'��_��eP�_��O�_\u001e�܇,0.002074688796680498)\n(i��/I�{��ke�\u0013��������,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000HWnG��K��\u0003\u0000\u0000V\u0007\u0000\u0000\u0011\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(g\u0018�D/�i\u001a,��i�i=�ۜ����v��J0����9�k��0N�a�B�8l,0.002074688796680498)\n(���\u0019���̎\u0002��p\u001a�\u000f��I��O���5G\u001f�I9��%�ݞ����J9\u00185�7ZS��n���v\u0014s�I�\u0005Ni�}�;����/\u0013�!��\u0003e'\u0007\u000eQ��,0.002074688796680498)\n(vulgarity,0.02074688796680498)\n(mpeg,0.004149377593360996)\n(d�\u001b,0.002074688796680498)\n(4LOX]W\u0002��:�\u0011�\u0012Z�B�Z��?�(%�-��a}��Z<��އ\"���-3��!����a�<�h�@��,0.002074688796680498)\n(\u0012x{GU%�^7q����|�,0.002074688796680498)\n(writer,0.006224066390041493)\n(��\u00193��\u0017�[W�K�\u0011���i�Â�\u0018�\u0002Wn��@8���M�O3/HA�9�-*<R������Z�<l�\u001cZ�qᛘ��\u0000�E,0.002074688796680498)\n(\b4�\u0007hZ�e\u001ba���\u0011��#\u0015�9��W9�\u0002\u0011̏Fu�\u001d�h�֒M�%�\u0015�+P�0�,0.002074688796680498)\n(����J(g.J#h��r\u0002o�f$�\u00177RcW��VB�B\u001c��\u0000�'�&���y��3,0.002074688796680498)\n(�\u0001PK\u0001\u0002?\u0000\u0014\u0000\u0000\u0000\b\u0000tWnG|eI��\u0004\u0000\u0000�,0.002074688796680498)\n(T�{�G���1kS�<�\u0016e��h��\u0011�J\u0007Lz��W������O�Y\u0001�|M\u0011f�~#��;#\"�cJE���W\u0010���C�N1��ON�ԇ\u0018���cE�\u0012y�\u0003�1A\u0014$�x�\u0017�\u0018�\u0017?\u0011�,��iVes\u0004���=\u001di\u001c\u001d�},0.002074688796680498)\n(XnG�1YE\u0002\u0000\u0000<\u0005\u0000\u0000\u0012\u0000$\u0000\u0000\u0000\u0000\u0000\u0000\u0000,0.002074688796680498)\n(�\u000fj�T�[��[����Oe��|���o\u0018��,0.002074688796680498)\n(k\u001c�\u0002b`�\\��:Ơ�,0.002074688796680498)\n(cW�!Kv\u0000T7kĨ�)�,0.002074688796680498)\n(여\u0011,0.002074688796680498)\n(x�\u0000bd�k�DNI\u000e�����\u000e\u001c��N��za٣(�\u0000�+4R��}G\u0000��\u0010~�x��`���,0.002074688796680498)\n(5�#�O,0.002074688796680498)\n(�\u0001X\u0014�*j,0.002074688796680498)\n(vL�K;Cd��j�b�\bz�d�!�i\u001e��\u0014��U�v������z�a�\u0016������;,0.002074688796680498)\n(mouthful,0.002074688796680498)\n(AG,,0.002074688796680498)\n(��W_�\u0014�f�\u0012�j��\u0010��\u001e�i>ǜ���,0.002074688796680498)\n(bTt�)�\u0015�\u0006�\u001f���/߀�#\u001d\u0017|�ꧭ\u0018$��,0.002074688796680498)\n(�o\u0011��f,0.002074688796680498)\n(��wf�;0�+\u0004Q�\u001aI�J^T�l&.��'M_��P��W��\u0003�\u0015����1�^R`'6b\u001b�܁1\u0012���D�\u000f\u0014�n,0.002074688796680498)\n(\u0000\u0000\u0011\u0000\u0000\u0000ham/6-182msg1.txt�Vے�0,0.002074688796680498)"
+          },
+          {
+            "type": "HTML",
+            "data": "<div class=\"result-alert alert-warning\" role=\"alert\"><button type=\"button\" class=\"close\" data-dismiss=\"alert\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button><strong>Output is truncated</strong> to 102400 bytes. Learn more about <strong>ZEPPELIN_INTERPRETER_OUTPUT_LIMIT</strong></div>"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=1",
+              "$$hashKey": "object:1876"
+            },
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=2",
+              "$$hashKey": "object:1877"
+            },
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=3",
+              "$$hashKey": "object:1878"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1633968682636_1742306278",
+      "id": "20180923-212047_1364377930",
+      "dateCreated": "2021-10-11T18:11:22+0200",
+      "dateStarted": "2021-10-13T19:16:17+0200",
+      "dateFinished": "2021-10-13T19:18:16+0200",
+      "status": "FINISHED",
+      "$$hashKey": "object:195"
+    },
+    {
+      "text": "%spark\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-11T22:08:06+0200",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1633982886657_82442666",
+      "id": "paragraph_1633982886657_82442666",
+      "dateCreated": "2021-10-11T22:08:06+0200",
+      "status": "READY",
+      "$$hashKey": "object:196"
+    },
+    {
+      "title": "Main",
+      "text": "%spark\n\n// main part of the notebook\n  def main(args: Array[String]) {\n      // the directory  path is given as an argument to the main  !!! \n      // we should hold exception if don't have it\n      // ie : /tmp/ling-spam/\n      if(args.length<=0){\n          println(\"No directory path provided\")\n      }\n      val (probaW, nbFiles) = probaWordDir(sc)(args(0) + \"/*/*.txt\") // p(occurs), nbFiles in total\n      // COmputing the couple (ptobaWordHam,nbFilesHam)\n      val (probaWordHam, nbFilesHam) = probaWordDir(sc)(args(0).concat(\"/ham/*.txt\")) // the arg given to the param is : /tmp/ling-spam/ham/*\"\n      val (probaWordSpam, nbFilesSpam) = probaWordDir(sc)(args(0).concat(\"/spam/*.txt\")) // the arg given to the param is : /tmp/ling-spam/spam/*\"\n       \n      //Computing the probability P(occurs, class) for each word.\n      // Each RDD has the map structure: word => probability the word occurs (or not) in an email of a given class.\n      // p(true,ham) = probaWordHam , p(false,ham),= 1 - probaWordHam (probaWordHam.map(x => (x._1, 1 - x._2))\n      // p(true,spam) = probaWordSpam , p(false,spam) = 1 - probaWordSpam  (probaWordSpam.map(x => (x._1, 1 - x._2)\n     // the 4 RDDs : \n      val probaWC = (probaWordHam, probaWordSpam, probaWordHam.map(x => (x._1, 1 - x._2)), probaWordSpam.map(x => (x._1, 1 - x._2)))\n\n    // the probability that an email belongs to the given class : p(class)\n    val probaHam = nbFilesHam.toDouble / nbFiles.toDouble  // p(Ham)\n    val probaSpam = nbFilesSpam.toDouble / nbFiles.toDouble // p(Spam)\n    val defaultProba = 10^(-5) //default value \n    // Compute mutual information for each class and occurs \n    val MITrueHam = computeMutualInformationFactor(probaWC._1, probaW, probaHam, defaultProba) \n    val MITrueSpam = computeMutualInformationFactor(probaWC._2, probaW, probaSpam, defaultProba)\n    val MIFalseHam = computeMutualInformationFactor(probaWC._3, probaW, probaHam, defaultProba)\n    val MIFalseSpam = computeMutualInformationFactor(probaWC._4, probaW, probaSpam, defaultProba)\n    \n    \n    \n    //computing the mutual information of each word as a RDD with the map structure: word => MI(word)\n    val MI :RDD[(String, Double)] = MITrueHam.union(MITrueSpam).union(MIFalseHam).union(MIFalseSpam).reduceByKey( (x, y) => x + y)\n    \n    \n    //  print on screen the 20 top words \n     val topWords: Array[(String, Double)] = MI.top(20)(Ordering[Double].on(x => x._2))\n     topWords.map(_=>println)\n     \n    //Save all the words and their mutual information values, sorted and the corresp top words must be also stored on HDFS \n    val path: String = \"/tmp/topWords.txt\"\n    sc.parallelize(topWords).keys.coalesce(1, true).saveAsTextFile(path)\n    sc.wholeTextFiles(\"/tmp/topWords.txt\").collect \n\n     \n}\n\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-13T19:40:46+0200",
+      "config": {
+        "editorSetting": {
+          "editOnDblClick": false,
+          "language": "scala",
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "editorHide": false,
+        "fontSize": 9,
+        "title": true,
+        "results": {},
+        "graph": {
+          "mode": "table",
+          "height": 300,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mmain\u001b[0m: \u001b[1m\u001b[32m(args: Array[String])Unit\u001b[0m\n"
+          }
+        ]
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1633968682636_90317114",
+      "id": "20161018-143604_1206436852",
+      "dateCreated": "2021-10-11T18:11:22+0200",
+      "dateStarted": "2021-10-13T19:32:38+0200",
+      "dateFinished": "2021-10-13T19:32:43+0200",
+      "status": "FINISHED",
+      "$$hashKey": "object:197"
+    },
+    {
+      "text": "\n%spark\nmain(Array(\"/tmp/ling-spam\"))",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-13T19:33:28+0200",
+      "config": {
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "colWidth": 12,
+        "editorMode": "ace/mode/scala",
+        "fontSize": 9,
+        "results": {},
+        "enabled": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "results": {
+        "code": "SUCCESS",
+        "msg": []
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=16",
+              "$$hashKey": "object:2538"
+            },
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=17",
+              "$$hashKey": "object:2539"
+            },
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=18",
+              "$$hashKey": "object:2540"
+            },
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=19",
+              "$$hashKey": "object:2541"
+            },
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=20",
+              "$$hashKey": "object:2542"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1633968682637_2034606708",
+      "id": "20181007-142558_1778927967",
+      "dateCreated": "2021-10-11T18:11:22+0200",
+      "dateStarted": "2021-10-13T19:33:28+0200",
+      "dateFinished": "2021-10-13T19:34:20+0200",
+      "status": "FINISHED",
+      "$$hashKey": "object:198"
+    },
+    {
+      "text": "%spark\nsc.wholeTextFiles(\"/tmp/topWords.txt\").collect ",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-13T19:34:40+0200",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {
+        "jobUrl": {
+          "propertyName": "jobUrl",
+          "label": "SPARK JOB",
+          "tooltip": "View in Spark web UI",
+          "group": "spark",
+          "values": [
+            {
+              "jobUrl": "http://10.0.2.15:4040/jobs/job?id=21",
+              "$$hashKey": "object:2666"
+            }
+          ],
+          "interpreterSettingId": "spark"
+        }
+      },
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634121225244_939738131",
+      "id": "paragraph_1634121225244_939738131",
+      "dateCreated": "2021-10-13T12:33:45+0200",
+      "status": "FINISHED",
+      "$$hashKey": "object:199",
+      "dateFinished": "2021-10-13T19:34:46+0200",
+      "dateStarted": "2021-10-13T19:34:40+0200",
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "\u001b[1m\u001b[34mres8\u001b[0m: \u001b[1m\u001b[32mArray[(String, String)]\u001b[0m =\nArray((hdfs://localhost:9000/tmp/topWords.txt/part-00000,\"valuecom\nkoyra\neventuality\nkwong\nreunion\njade\nsapore\ninstrumentality\nhermeneutical\njove\nprotoindo\nukrainian\nfranzoesischen\nneuropsychology\nhem\ninscripcione\nnon-literary\neng101\nnarmandah\nclients\n\"))\n"
+          }
+        ]
+      }
+    },
+    {
+      "text": "%spark\n",
+      "user": "anonymous",
+      "dateUpdated": "2021-10-13T19:34:40+0200",
+      "config": {
+        "colWidth": 12,
+        "fontSize": 9,
+        "enabled": true,
+        "results": {},
+        "editorSetting": {
+          "language": "scala",
+          "editOnDblClick": false,
+          "completionKey": "TAB",
+          "completionSupport": true
+        },
+        "editorMode": "ace/mode/scala"
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "runtimeInfos": {},
+      "progressUpdateIntervalMs": 500,
+      "jobName": "paragraph_1634146480494_1210048137",
+      "id": "paragraph_1634146480494_1210048137",
+      "dateCreated": "2021-10-13T19:34:40+0200",
+      "status": "READY",
+      "focus": true,
+      "$$hashKey": "object:2566"
+    }
+  ],
+  "name": "BigDataTechnologiesProject2021template",
+  "id": "2GHCPMT34",
+  "defaultInterpreterGroup": "spark",
+  "version": "0.9.0-preview2",
+  "noteParams": {},
+  "noteForms": {},
+  "angularObjects": {},
+  "config": {
+    "isZeppelinNotebookCronEnable": false,
+    "looknfeel": "default",
+    "personalizedMode": "false"
+  },
+  "info": {},
+  "path": "/BigDataTechnologiesProject2021template"
+}
